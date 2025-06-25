@@ -1,0 +1,724 @@
+{
+  "$schema": "ExtensionSettings.Schema.json",
+  "guid": "8a770213-8e0a-464d-9103-b05696822d80",
+  "version": "1.2.11.1",
+  "packageVersion": "1.2.11.1",
+  "configVersion": "1.5.0.1",
+  "policies": [
+    "StrictPropertyValidation"
+  ],
+  "symbolCategories": [
+    {
+      "name": "CATEGORY_USERMANAGEMENT",
+      "localization": "CATEGORY_USERMANAGEMENT"
+    }
+  ],
+  "symbols": {
+    "GetBaDevice": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object"
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetBaDevices": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "oneOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "LoadChildren": {
+                "type": "boolean"
+              }
+            }
+          }
+        ]
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetBaObject": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "DeviceName": {
+            "type": "string"
+          },
+          "BaObjectInstancePath": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetBaObjectTexts": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "DeviceName": {
+            "type": "string"
+          },
+          "BaObjectInstancePath": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "AcknowledgeBaObject": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "DeviceName": {
+            "type": "string"
+          },
+          "BaObjectInstancePath": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "Events": {
+      "readValue": {
+        "type": "object",
+        "properties": {
+          "List": {
+            "type": "object"
+          },
+          "Count": {
+            "type": "number"
+          },
+          "AcknowledgeableCount": {
+            "type": "number"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false
+    },
+    "EventHistory": {
+      "readValue": {
+        "type": "object",
+        "properties": {
+          "List": {
+            "type": "object"
+          },
+          "Count": {
+            "type": "number"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false
+    },
+    "EventCountPerType": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "History": {
+            "type": "boolean"
+          },
+          "DeviceName": {
+            "type": "string"
+          },
+          "BaObjectInstancePath": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "AcknowledgeableEventCountPerType": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "oneOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "DeviceName": {
+                "type": "string"
+              },
+              "BaObjectInstancePath": {
+                "type": "string"
+              }
+            }
+          }
+        ]
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetUnits": {
+      "readValue": {
+        "function": true
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetBaStandardParameterInformation": {
+      "readValue": {
+        "function": true
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetBaAdditionalParameterInformation": {
+      "readValue": {
+        "function": true
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetValueRange": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "DeviceName": {
+            "type": "string"
+          },
+          "BaObjectInstancePath": {
+            "type": "string"
+          },
+          "BaVarId": {
+            "type": "integer"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetValueRanges": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "array"
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetDecoratingInfo": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "DeviceName": {
+            "type": "string"
+          },
+          "BaObjectInstancePath": {
+            "type": "string"
+          },
+          "BaVarId": {
+            "type": "integer"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetPeriodicallyUpdatedVariableIDs": {
+      "readValue": {
+        "function": true
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetSchema": {
+      "readValue": {
+        "function": true,
+        "writeValue": {
+          "type": "string"
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "ChangeLocale": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "number"
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetReferringObjects": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "DeviceName": {
+            "type": "string"
+          },
+          "BaObjectInstancePath": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "AssignBaObjectToUnusedTrend": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "DeviceName": {
+            "type": "string"
+          },
+          "BaObjectInstancePath": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "RemoveBaObjectFromAssignedTrends": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "DeviceName": {
+            "type": "string"
+          },
+          "BaObjectInstancePath": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "SaveUserData": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "type": "string"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "LoadUserData": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "type": "string"
+          },
+          "userName": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "DeleteUserData": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "type": "string"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "SaveTrendCollection": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "trendCollectionName": {
+            "type": "string"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "root": {
+            "type": "object",
+            "properties": {
+              "deviceName": {
+                "type": "string"
+              },
+              "instancePath": {
+                "type": "string"
+              }
+            }
+          },
+          "baObjects": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "deviceName": {
+                  "type": "string"
+                },
+                "instancePath": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "LoadTrendCollections": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "DeleteTrendCollection": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string"
+          },
+          "trendCollectionName": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "ClearUserData": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string"
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetUserLevelGroups": {
+      "readValue": {
+        "function": true
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "GetDefinitions": {
+      "readValue": {
+        "function": true
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "ListSymbols": {
+      "readValue": {
+        "function": true
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "ListSymbolNames": {
+      "readValue": {
+        "function": true
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    },
+    "Diagnostics": {
+      "readValue": {
+        "function": true,
+        "type": "object",
+        "readOnly": true,
+        "transient": true,
+        "properties": {
+          "siteApiVersion": {
+            "type": "string",
+            "readOnly": true,
+            "propertyOrder": 1
+          },
+          "compatibleSiteServerVersion": {
+            "type": "string",
+            "readOnly": true,
+            "propertyOrder": 2
+          },
+          "adsDllVersion": {
+            "type": "string",
+            "readOnly": true,
+            "propertyOrder": 3
+          },
+          "tcHmiSrvExtVersion": {
+            "type": "string",
+            "readOnly": true,
+            "propertyOrder": 4
+          },
+          "devices": {
+            "propertyOrder": 5,
+            "readOnly": true,
+            "type": "object",
+            "additionalProperties": {
+              "readOnly": true,
+              "type": "object",
+              "properties": {
+                "deviceName": {
+                  "propertyOrder": 1,
+                  "readOnly": true,
+                  "type": "string"
+                },
+                "address": {
+                  "propertyOrder": 2,
+                  "readOnly": true,
+                  "type": "string"
+                },
+                "connectionStateDescription": {
+                  "propertyOrder": 3,
+                  "readOnly": true,
+                  "type": "string"
+                },
+                "connectionState": {
+                  "propertyOrder": 4,
+                  "readOnly": true,
+                  "type": "integer",
+                  "hidden": true
+                },
+                "nameSpace": {
+                  "propertyOrder": 5,
+                  "readOnly": true,
+                  "type": "string"
+                },
+                "components": {
+                  "propertyOrder": 6,
+                  "readOnly": true,
+                  "type": "object",
+                  "properties": {
+                    "bacnetRevision": {
+                      "propertyOrder": 1,
+                      "readOnly": true,
+                      "type": "string"
+                    },
+                    "bacnetStackVersion": {
+                      "propertyOrder": 2,
+                      "readOnly": true,
+                      "type": "string"
+                    },
+                    "tc3XBaVersion": {
+                      "propertyOrder": 3,
+                      "readOnly": true,
+                      "type": "string"
+                    },
+                    "tc3Ba2CommonVersion": {
+                      "propertyOrder": 4,
+                      "readOnly": true,
+                      "type": "string"
+                    },
+                    "tc3BACnetRev14Version": {
+                      "propertyOrder": 5,
+                      "readOnly": true,
+                      "type": "string"
+                    },
+                    "siteServerVersion": {
+                      "propertyOrder": 6,
+                      "readOnly": true,
+                      "type": "string"
+                    }
+                  }
+                },
+                "statistics": {
+                  "propertyOrder": 7,
+                  "readOnly": true,
+                  "type": "object",
+                  "properties": {
+                    "objectCount": {
+                      "propertyOrder": 1,
+                      "readOnly": true,
+                      "type": "integer"
+                    },
+                    "plantCount": {
+                      "propertyOrder": 2,
+                      "readOnly": true,
+                      "type": "integer"
+                    },
+                    "unusedTrendObjects": {
+                      "propertyOrder": 3,
+                      "readOnly": true,
+                      "type": "integer"
+                    },
+                    "watchedVariables": {
+                      "propertyOrder": 4,
+                      "readOnly": true,
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "required": [
+                "deviceName",
+                "address",
+                "connectionState"
+              ]
+            }
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": true
+    }
+  },
+  "dotNetTargetFramework": "net6.0",
+  "dotNetTargetFrameworkVersion": "v6.0",
+  "dotNetPlatformTarget": "AnyCPU",
+  "dotNetConfiguration": "Release"
+}

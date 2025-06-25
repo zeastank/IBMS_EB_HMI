@@ -1,0 +1,4814 @@
+<div id="FloorMZ" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0">
+
+<div id="TcHmiImageMZ_43" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top="93" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-src="Images/Asset/FloorPlanMZ.png" data-tchmi-bottom="17" data-tchmi-creator-visibility="Visible" data-tchmi-left="43" data-tchmi-right="-23" data-tchmi-creator-locked="True">
+</div>
+<div id="TcHmiTextblockMZ_1790" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="701" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.14" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_077::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_077::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_077::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1790::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1790::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1790::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_077::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_077::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_077::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1790::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1790::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1790::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_845" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="35" data-tchmi-bottom="-35" data-tchmi-left="701">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1791" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="701" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_077::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="67" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiTextblockMZ_1792" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="817" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.15" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_078::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_078::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_078::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1792::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1792::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1792::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_078::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_078::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_078::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1792::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1792::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1792::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_846" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="35" data-tchmi-bottom="-30" data-tchmi-left="817">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1793" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="817" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_078::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="67" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiTextblockMZ_1794" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="932" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.16" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_079::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_079::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_079::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1794::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1794::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1794::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_079::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_079::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_079::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1794::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1794::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1794::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_847" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="35" data-tchmi-bottom="-15" data-tchmi-left="932">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1795" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="932" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_079::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="67" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiTextblockMZ_1796" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="469" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.12" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_075::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_075::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_075::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1796::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1796::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1796::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_075::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_075::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_075::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1796::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1796::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1796::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_848" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="35" data-tchmi-bottom="-25" data-tchmi-left="469">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1797" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="469" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_075::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="67" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiTextblockMZ_1798" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="585" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.13" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_076::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_076::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_076::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1798::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1798::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1798::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_076::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_076::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_076::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1798::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1798::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1798::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_849" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="35" data-tchmi-bottom="-20" data-tchmi-left="585">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1799" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="585" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_076::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="67" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_842" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="66" data-tchmi-height-unit="px" data-tchmi-left="492" data-tchmi-left-unit="px" data-tchmi-top="101" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="160" data-tchmi-y2="90" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1800" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="1048" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.17" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_080::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_080::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_080::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1800::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1800::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1800::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_080::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_080::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_080::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1800::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1800::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1800::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_850" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="35" data-tchmi-bottom="-20" data-tchmi-left="1048">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1801" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="1048" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_080::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="67" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiTextblockMZ_1802" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="1163" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.18" data-tchmi-top="36" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_081::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_081::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_081::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1802::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1802::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1802::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_081::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_081::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_081::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1802::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1802::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1802::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_851" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="36" data-tchmi-bottom="-5" data-tchmi-left="1163">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1803" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="1163" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_081::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="68" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_843" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="66" data-tchmi-height-unit="px" data-tchmi-left="605" data-tchmi-left-unit="px" data-tchmi-top="101" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="110" data-tchmi-y2="90" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiLineMZ_844" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="66" data-tchmi-height-unit="px" data-tchmi-left="722" data-tchmi-left-unit="px" data-tchmi-top="101" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="30" data-tchmi-y2="180" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiLineMZ_845" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="66" data-tchmi-height-unit="px" data-tchmi-left="838" data-tchmi-left-unit="px" data-tchmi-top="102" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="-51" data-tchmi-y2="90" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiLineMZ_846" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="66" data-tchmi-height-unit="px" data-tchmi-left="955" data-tchmi-left-unit="px" data-tchmi-top="102" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="-70" data-tchmi-y2="85" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiLineMZ_847" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="66" data-tchmi-height-unit="px" data-tchmi-left="1070" data-tchmi-left-unit="px" data-tchmi-top="102" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="-110" data-tchmi-y2="40" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiLineMZ_848" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="66" data-tchmi-height-unit="px" data-tchmi-left="1186" data-tchmi-left-unit="px" data-tchmi-top="102" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="-280" data-tchmi-y2="150" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1804" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="1330" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.19" data-tchmi-top="92" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_082::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_082::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_082::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1804::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1804::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1804::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_082::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_082::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_082::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1804::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1804::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1804::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_852" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="92" data-tchmi-bottom="-57" data-tchmi-left="1330">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1805" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="1330" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_082::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="124" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiTextblockMZ_1806" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="1330" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.20" data-tchmi-top="171" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_083::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_083::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_083::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1806::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1806::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1806::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_083::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_083::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_083::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1806::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1806::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1806::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_853" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="171" data-tchmi-bottom="-120" data-tchmi-left="1330">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1807" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="1330" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_083::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="203" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiTextblockMZ_1808" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="1330" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.21" data-tchmi-top="249" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_084::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_084::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_084::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1808::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1808::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1808::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_084::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_084::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_084::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1808::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1808::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1808::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_854" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="249" data-tchmi-bottom="-180" data-tchmi-left="1330">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1809" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="1330" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_084::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="281" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_849" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="1297" data-tchmi-left-unit="px" data-tchmi-top="128" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="-220" data-tchmi-y2="110" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiLineMZ_850" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="1297" data-tchmi-left-unit="px" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="-130" data-tchmi-y2="70" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiLineMZ_851" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="1298" data-tchmi-left-unit="px" data-tchmi-top="283" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="-210" data-tchmi-y2="20" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1810" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="380" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.11" data-tchmi-top="117" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_074::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_074::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_074::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1810::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1810::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1810::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_074::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_074::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_074::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1810::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1810::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1810::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_855" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="117" data-tchmi-bottom="-69" data-tchmi-left="380">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1811" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="380" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_074::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="149" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_852" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="456" data-tchmi-left-unit="px" data-tchmi-top="152" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="194" data-tchmi-y2="120" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1812" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="333" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.10" data-tchmi-top="198" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_073::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_073::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_073::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1812::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1812::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1812::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_073::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_073::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_073::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1812::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1812::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1812::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_856" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="198" data-tchmi-bottom="-150" data-tchmi-left="333">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1813" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="333" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_073::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_853" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="409" data-tchmi-left-unit="px" data-tchmi-top="232" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="150" data-tchmi-y2="30" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1814" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="286" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.9" data-tchmi-top="279" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_072::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_072::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_072::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1814::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1814::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1814::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_072::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_072::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_072::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1814::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1814::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1814::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_857" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="279" data-tchmi-bottom="-220" data-tchmi-left="286">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1815" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="286" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_072::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="311" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_854" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="356" data-tchmi-left-unit="px" data-tchmi-top="311" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="180" data-tchmi-y2="-10" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="40">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1816" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="285" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.8" data-tchmi-top="362" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_071::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_071::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_071::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1816::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1816::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1816::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_071::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_071::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_071::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1816::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1816::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1816::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_858" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="362" data-tchmi-bottom="-303" data-tchmi-left="285">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1817" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="285" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_071::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="394" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_855" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="355" data-tchmi-left-unit="px" data-tchmi-top="394" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="180" data-tchmi-y2="-60" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="40">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1818" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="330" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.7" data-tchmi-top="442" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_070::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_070::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_070::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1818::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1818::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1818::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_070::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_070::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_070::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1818::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1818::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1818::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_859" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="442" data-tchmi-bottom="-369" data-tchmi-left="330">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1819" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="330" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_070::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="474" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_856" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="400" data-tchmi-left-unit="px" data-tchmi-top="474" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="250" data-tchmi-y2="-100" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="40">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1820" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="307" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.6" data-tchmi-top="521" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_069::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_069::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_069::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1820::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1820::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1820::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_069::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_069::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_069::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1820::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1820::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1820::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_860" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="521" data-tchmi-bottom="-488" data-tchmi-left="307">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1821" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="307" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_069::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="553" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_857" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="377" data-tchmi-left-unit="px" data-tchmi-top="553" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="170" data-tchmi-y2="-25" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="40">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1822" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="232" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.3" data-tchmi-top="602" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_066::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_066::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_066::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1822::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1822::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1822::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_066::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_066::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_066::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1822::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1822::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1822::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_861" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="602" data-tchmi-bottom="-582" data-tchmi-left="232">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1823" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="232" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_066::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="634" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_858" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="302" data-tchmi-left-unit="px" data-tchmi-top="634" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="270" data-tchmi-y2="-100" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="40">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1824" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="167" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.2" data-tchmi-top="689" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_065::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_065::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_065::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1824::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1824::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1824::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_065::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_065::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_065::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1824::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1824::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1824::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_862" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="689" data-tchmi-bottom="-621" data-tchmi-left="167">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1825" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="167" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_065::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="721" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_859" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="237" data-tchmi-left-unit="px" data-tchmi-top="721" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="350" data-tchmi-y2="-145" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="40">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1826" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="166" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.1" data-tchmi-top="772" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_064::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_064::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_064::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1826::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1826::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1826::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_064::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_064::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_064::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1826::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1826::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1826::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_863" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="772" data-tchmi-bottom="-703" data-tchmi-left="166">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1827" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="166" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_064::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="804" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_860" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="236" data-tchmi-left-unit="px" data-tchmi-top="804" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="310" data-tchmi-y2="-175" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="40">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1828" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="839" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.5" data-tchmi-top="591" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_068::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_068::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_068::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1828::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1828::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1828::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_068::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_068::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_068::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1828::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1828::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1828::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_864" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="591" data-tchmi-bottom="-530" data-tchmi-left="839">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1829" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="839" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_068::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="623" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiTextblockMZ_1830" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="839" data-tchmi-left-unit="px" data-tchmi-text="EVB-MZ.4" data-tchmi-top="669" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="23" data-tchmi-text-horizontal-alignment="Center">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_067::bReady%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_067::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_067::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1830::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1830::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1830::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_067::bPresVal%/s%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_067::bReady%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_067::bPresVal%/s%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1830::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOn%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1830::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusOff%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblockMZ_1830::BackgroundColor%/ctrl%",
+        "value": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/String",
+        "symbolExpression": "%tr%StatusError%/tr%"
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+</div>
+<div id="TcHmiRectangleMZ_865" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-top="669" data-tchmi-bottom="-590" data-tchmi-left="839">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblockMZ_1831" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="839" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_067::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="701" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center">
+</div>
+<div id="TcHmiLineMZ_861" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="806" data-tchmi-left-unit="px" data-tchmi-top="625" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="-140" data-tchmi-y2="-60" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+<div id="TcHmiLineMZ_862" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="807" data-tchmi-left-unit="px" data-tchmi-top="703" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-x2="-190" data-tchmi-y2="-75" data-tchmi-stroke-thickness="3" data-tchmi-stroke-style="5,3,5" data-tchmi-x1="32">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 81, 255, 0.7843137)"
+}
+</script>
+</div>
+</div>

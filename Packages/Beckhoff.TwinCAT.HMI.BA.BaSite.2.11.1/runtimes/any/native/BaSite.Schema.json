@@ -1,0 +1,141 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "INTERVAL": {
+      "type": "integer",
+      "description": "DESC_INTERVAL",
+      "minimum": 1000,
+      "default": 2000,
+      "defaultConfigurable": true,
+      "propertyOrder": 1
+    },
+    "EVENTSETTINGS": {
+      "type": "object",
+      "description": "DEC_EVENTSETTINGS",
+      "properties": {
+        "EVENTHISTORYLIMIT": {
+          "type": "integer",
+          "description": "DESC_EVENTHISTROYLIMIT",
+          "minimum": 100,
+          "default": 40000,
+          "propertyOrder": 1
+        },
+        "EVENTHISTORYTHRESHOLD": {
+          "type": "integer",
+          "description": "DESC_EVENTHISTORYTHRESHOLD",
+          "minimum": 10,
+          "default": 4000,
+          "propertyOrder": 2
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "EVENTHISTORYLIMIT",
+        "EVENTHISTORYTHRESHOLD"
+      ],
+      "defaultConfigurable": true,
+      "propertyOrder": 2
+    },
+    "RUNTIMES": {
+      "type": "object",
+      "description": "DESC_RUNTIMES",
+      "additionalProperties": {
+        "type": "object",
+        "description": "DESC_RUNTIME",
+        "properties": {
+          "PORT": {
+            "type": "integer",
+            "minimum": 0,
+            "default": 851,
+            "optionMethod": {
+              "symbol": "ADS.RuntimePorts",
+              "writeValue": {
+                "NETID": {
+                  "$data": "#/properties/RUNTIMES/additionalProperties/NETID"
+                }
+              }
+            },
+            "propertyOrder": 3
+          },
+          "NETID": {
+            "type": "string",
+            "format": "amsnetid",
+            "optionMethod": {
+              "symbol": "ADS.ListRoutes"
+            },
+            "propertyOrder": 2
+          },
+          "ENABLED": {
+            "type": "boolean",
+            "default": true,
+            "propertyOrder": 1
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "PORT",
+          "NETID",
+          "ENABLED"
+        ]
+      },
+      "default": {
+        "IFP01": {
+          "PORT": 851,
+          "NETID": "127.0.0.1.1.1",
+          "ENABLED": false
+        }
+      },
+      "defaultConfigurable": true,
+      "propertyOrder": 3
+    },
+    "USERLEVEL": {
+      "category": "CATEGORY_USERMANAGEMENT",
+      "description": "DESC_USERLEVEL",
+      "type": "object",
+      "properties": {
+        "LEVEL_INTERNAL": {
+          "$ref": "tchmi:server#/definitions/userGroups"
+        },
+        "LEVEL_EXPERT": {
+          "$ref": "tchmi:server#/definitions/userGroups"
+        },
+        "LEVEL_ADVANCED": {
+          "$ref": "tchmi:server#/definitions/userGroups"
+        },
+        "LEVEL_BASIC": {
+          "$ref": "tchmi:server#/definitions/userGroups"
+        },
+        "LEVEL_GUEST": {
+          "$ref": "tchmi:server#/definitions/userGroups"
+        }
+      },
+      "default": {
+        "LEVEL_INTERNAL": [
+          "Internal",
+          "__SystemAdministrators"
+        ],
+        "LEVEL_EXPERT": [ "Expert" ],
+        "LEVEL_ADVANCED": [ "Advanced" ],
+        "LEVEL_BASIC": [ "Basic" ],
+        "LEVEL_GUEST": [ "Guest" ]
+      },
+      "required": [
+        "LEVEL_INTERNAL",
+        "LEVEL_EXPERT",
+        "LEVEL_ADVANCED",
+        "LEVEL_BASIC",
+        "LEVEL_GUEST"
+      ],
+      "additionalProperties": false,
+      "defaultConfigurable": true
+    }
+  },
+  "type": "object",
+  "required": [
+    "INTERVAL",
+    "EVENTSETTINGS",
+    "RUNTIMES",
+    "USERLEVEL"
+  ],
+  "additionalProperties": false
+}

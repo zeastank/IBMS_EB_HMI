@@ -1,0 +1,130 @@
+{
+  "$schema": "Language.Schema.json",
+  "locale": "de",
+  "localizedText": {
+    "devices": "Geraete",
+    "siteApiVersion": "BaSiteApi Version",
+    "compatibleSiteServerVersion": "Kompatible BaSiteServer Version",
+    "adsDllVersion": "ADS Dll Version",
+    "tcHmiSrvExtVersion": "TcHmiSrv Extension Dll Version",
+    "deviceName": "Geraetename",
+    "address": "Addresse",
+    "connectionStateDescription": "Verbindungsstatus",
+    "nameSpace": "Namensraum",
+    "components": "Komponenten",
+    "bacnetRevision": "BACnet Revision",
+    "bacnetStackVersion": "BACnet Stack Version",
+    "tc3XBaVersion": "Tc3_XBA Version",
+    "tc3Ba2CommonVersion": "Tc3_BA2_Common Version",
+    "tc3BACnetRev14Version": "Tc3_BACnet_Rev14 Version",
+    "siteServerVersion": "BaSiteServer Version",
+    "statistics": "Statistiken",
+    "objectCount": "Anzahl BA Objekte",
+    "plantCount": "Anzahl Plants",
+    "watchedVariables": "Anzahl beobachteter Variablen",
+    "unusedTrendObjects": "Anzahl unbenutzer Trendobjekte",
+
+    "RUNTIMES": "Laufzeiten",
+    "DESC_RUNTIMES": "Zu allen aktiven Laufzeiten wird eine ADS-Verbindung hergestellt.",
+    "DESC_RUNTIME": "Laufzeit",
+    "NETID": "AmsNetId",
+    "ENABLED": "Aktiv",
+    "PORT": "Port",
+    "INTERVAL": "Intervall",
+    "DESC_INTERVAL": "Intervall in dem SPS Variablen ausgelesen werden.",
+    "EVENTSETTINGS": "Eventeinstellungen",
+    "DEC_EVENTSETTINGS": "Eintellungen zur Handhabung von Events.",
+    "EVENTHISTORYLIMIT": "Limit Eventhistorie",
+    "DESC_EVENTHISTROYLIMIT": "Das Limit der gespeicherten Events in der Eventhistorie. Ist das Limit erreicht, werden die älteren Events überschrieben.",
+    "EVENTHISTORYTHRESHOLD": "Schwelle Eventhistorie",
+    "DESC_EVENTHISTORYTHRESHOLD": "Schwellwert, wann die Events hisotrisiert werden.",
+
+    "CATEGORY_USERMANAGEMENT": "Benutzerverwaltung",
+    "USERLEVEL": "Benutzergruppen",
+    "DESC_USERLEVEL": "Benutzergruppen, die den jeweiligen Benutzerleveln zugeordnet sind.",
+    "DESC_GROUP": "Gruppe",
+    "descUserGroups": "Benutzergruppe",
+    "LEVEL_INTERNAL": "Internal",
+    "LEVEL_EXPERT": "Expert",
+    "LEVEL_ADVANCED": "Advanced",
+    "LEVEL_BASIC": "Basic",
+    "LEVEL_GUEST": "Guest",
+
+    "MESSAGE_INIT": "Initialisierung erfolgreich.",
+    "ERROR_INIT": "Initialisierung fehlgeschlagen.\nZusaetzliche Informationen:\n{0}",
+    "MESSAGE_SHUTDOWN": "Herunterfahren erfolgreich.",
+    "ERROR_SHUTDOWN": "Herunterfahren fehlgeschlagen.\nZusaetzliche Informationen:\n{0}",
+
+    "MESSAGE_NEW_RUNTIMES_CONFIG": "Konfiguration fuer Laufzeiten erfolgreich.",
+    "ERROR_NEW_CONFIG": "Konfiguration fehlgeschlagen!\nZusaetzliche Informationen:\n{0}",
+
+    "WARN_CREATING_DEVICE_DIAGNOSTICS_FAILED": "Erstellen der Diagnoseinformationen fuer Geraet {0} fehlgeschlagen!\nZusaetzliche Informationen:\n{1}",
+    "WARN_CREATING_DIAGNOSTICS_FAILED": "Erstellen der Diagnoseinformationen fehlgeschlagen!\nZusaetzliche Informationen:\n{0}",
+
+    "MESSAGE_INTERVAL": "Interval fuer ReadJobs: {0}ms",
+
+    "MESSAGE_EVENTSETTINGS": "Eventeinstellungs aktualisiert. Limit Eventhistorie: {0} | Schwelle Eventhistorie: {1}",
+
+    "MESSAGE_DUPLICATE_DEVICE_NAME": "Ein Geraet mit dem Namen {0} wurde bereits hinzugefuegt. | Adresse: {1}:{2}",
+    "MESSAGE_NO_DEVICES": "Neue Konfiguration ohne Geraete!",
+    "MESSAGE_DUPLICATE_ADDRESS": "Die Adresse {0}:{1} wird bereits von Geraet '{2}' verwendet. Geraet '{3}' wurde nicht hinzugefuegt!",
+    "MESSAGE_NEW_DEVICE": "Neues Geraet wird hinzugefuegt. Name: {0} | Adresse: {1}:{2}",
+    "MESSAGE_DEVICE_RENAMED": "Geraet '{0}' wurde umbenannt in '{1}'.",
+    "MESSAGE_DEVICE_RENAMING": "Geraet '{0}' wird umbenannt in '{1}'...",
+    "WARN_ADDING_DEVICE": "Hinzufuegen von Geraet '{0}' fehlgeschlagen!\nZusaetzliche Informationen:\n{1}",
+    "WARN_LICENSE_EXCEEDED": "Die Target-Lizenz reicht nicht aus, um ein weiteres Gerät hinzuzufügen. Die maximale Anzahl beträgt: {0}",
+    "MESSAGE_LICENSEACTIVE": "Die Lizenz für {0} ist aktiv.",
+    "WARN_LICENSEINACTIVE": "Die Lizenz für {0} ist nicht aktiv",
+    "MESSAGE_TAGRGETLICENSE": "Lizenz aktiviert für {0} Ziele.",
+    "MESSAGE_SERVERSTATE": "Server hat den Status {0}.",
+    "ERROR_LICENSE_Check": "Fehler beim Lesen der Lizenz {0}. Gund: {1}",
+
+    "MESSAGE_DELETING_DEVICE": "Geraet '{0}' wird geloescht...",
+    "MESSAGE_DELETED_DEVICE": "Geraet '{0}' wurde geloescht.",
+    "ERROR_DELETE_DEVICE": "Loeschen von Geraet '{0}' fehlgeschlagen!\nZusaetzliche Informationen:\n{1}",
+
+    "WARN_WRONG_WRITE_VALUE": "Schreibwert des Befehls war leer oder hatten den falschen Typen.",
+    "WARN_WRITE_VALUE_PROPERTY_NOT_SET": "String '{0}' wurde nicht im Befehl Schreibwert gefunden.",
+
+    "WARN_DEVICENAME_NOT_SET": "String 'DeviceName' wurde nicht im Befehl Schreibwert gefunden. Finden des BaObjektes von einem unbekannten Geraet nicht moeglich! Mapping: {0}",
+    "WARN_DEVICE_NOT_FOUND": "Geraet mit dem Namen '{0}' wurde nicht gefunden.",
+
+    "WARN_ADS_DEVICE_NOT_AVAILABLE": "ADS Geraet '{0}' ist nicht verfügbar!",
+
+    "WARN_INSTANCE_PATH_NOT_SET": "String 'InstancePath' wurde nicht im Befehl Schreibwert gefunden. Finden des BaObjektes ohne Instanzpfad nicht moeglich!",
+    "WARN_BA_OBJECT_NOT_FOUND": "Das BaObject mit Instanzpfad '{0}' wurde nicht in Geraet '{1}' gefunden!",
+
+    "WARN_BAVARID_NOT_SET": "String 'BaVarId' wurde nicht im Befehl Schreibwert gefunden. Finden von BaVariabel ohne BaVariabelId nicht moeglich.",
+    "WARN_BAVARINSTNAME_NOT_SET": "String 'BaVarInstName' wurde nicht im Befehl Schreibwert gefunden. Finden von BaVariabel ohne BaVarInstName nicht moeglich.",
+    "WARN_BAVARID_NOT_FOUND": "BaVariable mit ID '{0}' and Instanzpfad '{1}' wurde nicht gefunden!",
+
+    "ERROR_SITE_EVENTS": "Sammeln der Site Events fehlgeschlagen.\nZusaetzliche Informationen:\n{0}",
+
+    "MESSAGE_DEVICE_CONNECTED": "Geraet '{0}' wurde verbunden.",
+    "ERROR_INIT_DEVICE_FAILED": "Initialisierung von Geraet '{0}' fehlgeschlagen.\nZusaetzliche Informationen:\n{1}",
+    "WARN_DEVICE_LOSING_CONNECTION": "Verliert Verbindung zu Geraet '{0}'!",
+    "ERROR_HANDLE_DEVICE_LOSING_CONNECTION": "Verarbeitung von Geraet '{0}', dass die Verbindung verliert, ist fehlgeschlagen.\nZusaetzliche Informationen:\n{1}",
+    "WARN_DEVICE_LOST_CONNECTION": "Verbindung zu Geraet '{0}' verloren!",
+
+    "INFO_EMPTY_VIEW": "View {0} hat keine Kindelemente.",
+    "ERROR_TO_VIEW_STRUCTURE": "Konvertieren der View-Struktur in einen Value fehlgeschlagen. BaObject: {0}\nZusaetzliche Informationen:\n{1}",
+
+    "WARN_READ_SYMBOL": "Symbol '{0}' konnte nicht gelesen werden!",
+    "WARN_READ_SYMBOL_WITH_ADDITIONAL_INFORMATION": "Symbol '{0}' konnte nicht gelesen werden!\nZusaetzliche Informationen:\n{1}",
+    "WARN_HANDLE_ON_POST_READ_JOB": "Verarbeiten von OnPostReadJob Event der Variable '{0}' fehlgeschlagen.\nZusaetzliche Informationen:\n{1}",
+    "WARN_WRITE_SYMBOL": "Symbol '{0}' konnte nicht geschrieben werden!",
+    "WARN_WRITE_BA_VAR": "BaVariable '{0}' von BaObject '{1}' konnte nicht geschrieben werden!",
+
+    "ERROR_READ_BA_DEVICE": "Lesen von BaDevice '{0}' fehlgeschlagen.\nZusaetzliche Informationen:\n{1}",
+    "ERROR_READ_BA_OBJECT": "Lesen von BaObject '{0}' fehlgeschlagen.\nZusaetzliche Informationen:\n{1}",
+    "ERROR_READ_BA_OBJECT_TEXTS": "Lesen von Texten vom BaObject '{0}' fehlgeschlagen.\nZusaetzliche Informationen:\n{1}",
+
+    "ERROR_GET_REFERRING_OBJECTS": "Abfragen von verweisenden BaObjekten fehlgeschlagen.\nZusaetzliche Informationen:\n{0}",
+    "WARN_NO_UNUSED_TREND": "Zuweisung von BaObject '{0}' nicht moeglich. Kein unbenutztes Trendobjekt gefunden.",
+    "WARN_ASSIGN_TO_TREND": "Zuweisung von BaObject zu Trend fehlgeschlagen.\nZusaetzliche Informationen:\n{0}",
+    "WARN_REMOVE_FROM_TREND": "Entfernen eines BaObjects von einem Trend fehlgeschlagen:\nZusaetzliche Informationen:\n{0}",
+
+    "WARN_GET_VALUE_RANGE_FAILED": "Abfragen der ValueRange von einer BaVariable fehlgeschlagen!:\nZusaetzliche Informationen:\n{0}",
+    "WARN_GET_DECORATING_INFO_FAILED": "Abfragen der DecoratingInfo von einer BaVariable fehlgeschlagen!:\nZusaetzliche Informationen:\n{0}"
+  }
+}

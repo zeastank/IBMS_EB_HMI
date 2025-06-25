@@ -1,0 +1,130 @@
+﻿{
+  "$schema": "Language.Schema.json",
+  "locale": "en",
+  "localizedText": {
+    "devices": "Devices",
+    "siteApiVersion": "BaSiteApi version",
+    "compatibleSiteServerVersion": "Compatible BaSiteServer version",
+    "adsDllVersion": "ADS Dll version",
+    "tcHmiSrvExtVersion": "TcHmiSrv Extension Dll Version",
+    "deviceName": "Device name",
+    "address": "Address",
+    "connectionStateDescription": "Connection state",
+    "nameSpace": "Namespace",
+    "components": "Components",
+    "bacnetRevision": "BACnet revision",
+    "bacnetStackVersion": "BACnet stack version",
+    "tc3XBaVersion": "Tc3_XBA version",
+    "tc3Ba2CommonVersion": "Tc3_BA2_Common version",
+    "tc3BACnetRev14Version": "Tc3_BACnet_Rev14 version",
+    "siteServerVersion": "BaSiteServer version",
+    "statistics": "Statistics",
+    "objectCount": "Ammount BA objects",
+    "plantCount": "Ammount plants",
+    "watchedVariables": "Ammount watched variables",
+    "unusedTrendObjects": "Ammount unused trend objects",
+
+    "RUNTIMES": "Runtimes",
+    "DESC_RUNTIMES": "An ADS connection is established to all enabled runtimes.",
+    "DESC_RUNTIME": "Runtime",
+    "NETID": "AmsNetId",
+    "ENABLED": "Enabled",
+    "PORT": "Port",
+    "INTERVAL": "Interval",
+    "DESC_INTERVAL": "Interval for reading BaVariables.",
+    "EVENTSETTINGS": "Event settings",
+    "DEC_EVENTSETTINGS": "Settings for handling events.",
+    "EVENTHISTORYLIMIT": "Event history limit",
+    "DESC_EVENTHISTROYLIMIT": "The limit of the historized events in the event history. The oldest events will be overriden, if the limit is reached.",
+    "EVENTHISTORYTHRESHOLD": "Event history threshold",
+    "DESC_EVENTHISTORYTHRESHOLD": "Threshold when the event history is hisotrized.",
+
+    "CATEGORY_USERMANAGEMENT": "User management",
+    "USERLEVEL": "User groups",
+    "DESC_USERLEVEL": "User groups that are related to the different user levels.",
+    "DESC_GROUP": "Group",
+    "descUserGroups": "User group",
+    "LEVEL_INTERNAL": "Internal",
+    "LEVEL_EXPERT": "Expert",
+    "LEVEL_ADVANCED": "Advanced",
+    "LEVEL_BASIC": "Basic",
+    "LEVEL_GUEST": "Guest",
+
+    "MESSAGE_INIT": "Initializing succeeded.",
+    "ERROR_INIT": "Initializing failed.\nAdditional information:\n{0}",
+    "MESSAGE_SHUTDOWN": "Shutdown succeeded.",
+    "ERROR_SHUTDOWN": "Shutdown failed.\nAdditional information:\n{0}",
+
+    "MESSAGE_NEW_RUNTIMES_CONFIG": "Configuration for runtimes succeeded.",
+    "ERROR_NEW_CONFIG": "Configuration failed!\nAdditional information:\n{0}",
+
+    "WARN_CREATING_DEVICE_DIAGNOSTICS_FAILED": "Creating diagnostics information of device {0} failed!\nAdditional information:\n{1}",
+    "WARN_CREATING_DIAGNOSTICS_FAILED": "Creating diagnostics information failed!\nAdditional information:\n{0}",
+
+    "MESSAGE_INTERVAL": "Interval for ReadJobs: {0}ms",
+
+    "MESSAGE_EVENTSETTINGS": "Event settings updated. Event history limit: {0} | Event history threshold: {1}",
+
+    "MESSAGE_DUPLICATE_DEVICE_NAME": "A device with name {0} has already been created. | Address: {1}:{2}",
+    "MESSAGE_NO_DEVICES": "New config with no devices!",
+    "MESSAGE_DUPLICATE_ADDRESS": "The address {0}:{1} is already used by device '{2}'. Device '{3}' was not added!",
+    "MESSAGE_NEW_DEVICE": "New device will be added. Name: {0} | Address: {1}:{2}",
+    "MESSAGE_DEVICE_RENAMED": "Device '{0}' was renamed to '{1}'.",
+    "MESSAGE_DEVICE_RENAMING": "Device '{0}' will be renamed to '{1}'...",
+    "WARN_ADDING_DEVICE": "Adding of device '{0}' failed!\nAdditional information:\n{1}",
+    "WARN_LICENSE_EXCEEDED": "Target license exceeded. Maximum number of targets: {0}",
+    "MESSAGE_LICENSEACTIVE": "License for {0} is active.",
+    "WARN_LICENSEINACTIVE": "License for {0} is not active.",
+    "MESSAGE_TAGRGETLICENSE": "License activated for {0} targets.",
+    "MESSAGE_SERVERSTATE": "Server is in state {0}.",
+    "ERROR_LICENSE_Check": "Error getting license {0}. Reason: {1}",
+
+    "MESSAGE_DELETING_DEVICE": "Deleting device '{0}'...",
+    "MESSAGE_DELETED_DEVICE": "Device '{0}' deleted.",
+    "ERROR_DELETE_DEVICE": "Deleting of Device '{0}' failed!\nAdditional information:\n {1}",
+
+    "WARN_WRONG_WRITE_VALUE": "The write value of the command was empty or has wrong type.",
+    "WARN_WRITE_VALUE_PROPERTY_NOT_SET": "String '{0}' could not be found in command write value.",
+
+    "WARN_DEVICENAME_NOT_SET": "String 'DeviceName' could not be found in command write value. Unable to get BaObject from unknown device! Mapping: {0}",
+    "WARN_DEVICE_NOT_FOUND": "The device with name '{0}' was not found.",
+
+    "WARN_ADS_DEVICE_NOT_AVAILABLE": "ADS device '{0}' is not available!",
+
+    "WARN_INSTANCE_PATH_NOT_SET": "String 'InstancePath' could not be found in command write value. Unable to get BaObject without its instance path!",
+    "WARN_BA_OBJECT_NOT_FOUND": "The BaObject with instance path '{0}' was not found in device '{1}'!",
+
+    "WARN_BAVARID_NOT_SET": "String 'BaVarId' could not be found in command write value. Unable to get BaVariable with out BaVariableId.",
+    "WARN_BAVARINSTNAME_NOT_SET": "String 'BaVarInstName' could not be found in command write value. Unable to get BaVariable with out BaVarInstName.",
+    "WARN_BAVARID_NOT_FOUND": "BaVariable with id '{0}' and instance path '{i}' was not found!",
+
+    "ERROR_SITE_EVENTS": "Collecting of site events failed.\nAdditional information:\n{0}",
+
+    "MESSAGE_DEVICE_CONNECTED": "Device '{0}' was connected.",
+    "ERROR_INIT_DEVICE_FAILED": "Initializing of device '{0}' failed.\nAdditional information:\n{1}",
+    "WARN_DEVICE_LOSING_CONNECTION": "Losing connection to Device '{0}'!",
+    "ERROR_HANDLE_DEVICE_LOSING_CONNECTION": "Handling of device '{0}', which is losing connection, failed.\nAdditional information:\n{1}",
+    "WARN_DEVICE_LOST_CONNECTION": "Lost connection to device '{0}'!",
+
+    "INFO_EMPTY_VIEW": "View {0} does not has any children elements.",
+    "ERROR_TO_VIEW_STRUCTURE": "Converting of view structure to value failed. BaObject: {0}\nAdditional information:\n{1}",
+
+    "WARN_READ_SYMBOL": "Reading of symbol '{0}' failed!",
+    "WARN_READ_SYMBOL_WITH_ADDITIONAL_INFORMATION": "Reading of symbol '{0}' failed!\\Additional information:\\n{1}",
+    "WARN_HANDLE_ON_POST_READ_JOB": "Handling of OnPostReadJob event of variable '{0}' failed.\nAdditional information:\n{1}",
+    "WARN_WRITE_SYMBOL": "Writing of symbol '{0}' failed!",
+    "WARN_WRITE_BA_VAR": "Writing of BaVariable '{0}' of BaObject '{1}' failed!",
+
+    "ERROR_READ_BA_DEVICE": "Reading of BaDevice '{0}' failed.\nAdditional information:\n{1}",
+    "ERROR_READ_BA_OBJECT": "Reading of BaObject '{0} failed.\nAdditional information:\n{1}",
+    "ERROR_READ_BA_OBJECT_TEXTS": "Reading of texts from BaObject '{0} failed.\nAdditional information:\n{1}",
+
+    "ERROR_GET_REFERRING_OBJECTS": "Query of referring BaObjects failed.\nAdditional information:\n{0}",
+    "WARN_NO_UNUSED_TREND": "Unable to assigning BaObject '{0}'. No unused trend object found.",
+    "WARN_ASSIGN_TO_TREND": "Assigning BaObject to Trend failed.\nAdditional information:\n{0}",
+    "WARN_REMOVE_FROM_TREND": "Removing BaObject from Trend failed:\nAdditional information:\n{0}",
+
+    "WARN_GET_VALUE_RANGE_FAILED": "Getting ValueRange of BaVariable failed!: Additional Information: {0}",
+    "WARN_GET_DECORATING_INFO_FAILED": "Getting decorating info of BaVariable failed!: Additional Information: {0}"
+  }
+}
