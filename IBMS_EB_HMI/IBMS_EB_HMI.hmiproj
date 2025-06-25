@@ -1,0 +1,3827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props" Condition="Exists('$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <TcHmiDirectory>$(registry:HKEY_CURRENT_USER\Software\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
+    <TcHmiDirectory Condition="'$(TcHmiDirectory)'==''">$(registry:HKEY_LOCAL_MACHINE\Software\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
+    <TcHmiDirectory Condition="'$(TcHmiDirectory)'==''">$(registry:HKEY_LOCAL_MACHINE\Software\Wow6432Node\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <AvailablePlatforms>TwinCAT HMI</AvailablePlatforms>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <HmiTitle>THE ENERGY IBMS</HmiTitle>
+    <HmiVerboseLevel>2</HmiVerboseLevel>
+    <HmiVersion>1.0.0.0</HmiVersion>
+    <HmiCommunicationServerPort>3001</HmiCommunicationServerPort>
+    <HmiLogTcHmiServerMessages>false</HmiLogTcHmiServerMessages>
+    <HmiLogDesignerModeComMessages>false</HmiLogDesignerModeComMessages>
+    <HmiServerVersion>Latest</HmiServerVersion>
+    <HmiUseX64>True</HmiUseX64>
+    <HmiDefaultLanguage>client</HmiDefaultLanguage>
+    <TargetFrameworkMoniker>native,Version=v1.12.0,Profile=tchmi</TargetFrameworkMoniker>
+    <TargetFramework>native1.12-tchmi</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+    <Name>IBMS_EB_HMI</Name>
+    <HmiCommunicationRouterPort>10101</HmiCommunicationRouterPort>
+    <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
+    <HmiInitial>1.12.762.46</HmiInitial>
+    <HmiRecent>1.12.762.46</HmiRecent>
+    <HmiServerNodeAdvancedView>False</HmiServerNodeAdvancedView>
+    <HmiTmcFiles>[
+  {
+    "FileName": "D:\\Works\\Energy_Building\\TC_project\\TwinCAT Project3\\TwinCAT Project3\\Untitled1\\Untitled1.tmc",
+    "RootNamespace": "IBMS",
+    "IsFromSolution": false
+  }
+]</HmiTmcFiles>
+    <HmiTimeFormatLocale>id-ID</HmiTimeFormatLocale>
+    <HmiTimeZone>Asia/Jakarta</HmiTimeZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
+    <TwinCATHmi_Targets>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.targets</TwinCATHmi_Targets>
+  </PropertyGroup>
+  <Import Project="$(TwinCATHmi_Tasks)" />
+  <Import Project="$(TwinCATHmi_Targets)" />
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>888d4b56-e9ae-4553-bd71-5c2addf0e2d5</ProjectGuid>
+    <RootNamespace>TwinCAT3HmiProject</RootNamespace>
+    <AssemblyName>TwinCAT3HmiProject</AssemblyName>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">TwinCAT HMI</Platform>
+  </PropertyGroup>
+  <!-- Any CPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|TwinCAT HMI' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>TwinCAT HMI</PlatformTarget>
+    <DefaultNamespace>IBMS_EB_HMI</DefaultNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|TwinCAT HMI' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>TwinCAT HMI</PlatformTarget>
+    <DefaultNamespace>IBMS_EB_HMI</DefaultNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition="'$(RestoreProjectStyle)' == 'PackageReference'" />
+  <PropertyGroup>
+    <PreBuildEventDependsOn />
+  </PropertyGroup>
+  <Target Name="PreBuildEvent" Condition="'$(PreBuildEvent)'!=''" DependsOnTargets="$(PreBuildEventDependsOn)">
+    <Exec WorkingDirectory="$(OutDir)" Command="$(PreBuildEvent)" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEventDependsOn />
+  </PropertyGroup>
+  <Target Name="PostBuildEvent" Condition="'$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)'=='Always' or '$(RunPostBuildEvent)'=='OnOutputUpdated')" DependsOnTargets="$(PostBuildEventDependsOn)">
+    <Exec WorkingDirectory="$(OutDir)" Command="$(PostBuildEvent)" />
+  </Target>
+  <Target Name="GetFrameworkPaths" />
+  <PropertyGroup>
+    <BuiltProjectOutputGroupDependsOn>
+			PreBuildEvent;
+			CoreBuild;
+			PostBuildEvent
+		</BuiltProjectOutputGroupDependsOn>
+    <CleanDependsOn>
+			BaseClean
+		</CleanDependsOn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TcHmi_ProjectDirectory Condition="'$(TcHmi_ProjectDirectory)' == ''">$(MSBuildProjectDirectory)</TcHmi_ProjectDirectory>
+    <TcHmi_ServerAddress Condition="'$(TcHmi_ServerAddress)' == ''">127.0.0.1</TcHmi_ServerAddress>
+    <TcHmi_ServerPort Condition="'$(TcHmi_ServerPort)' == ''">1010</TcHmi_ServerPort>
+  </PropertyGroup>
+  <Target Name="CoreBuild">
+    <TcHmiMSBuild.Publish.TcHmiBuild TaskAction="Clean" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" />
+    <TcHmiMSBuild.Publish.TcHmiBuild TaskAction="Build" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" ProjectFiles="@(Content)" VirtualMappings="$(TcHmi_VirtualMappings)" />
+    <TcHmiMSBuild.Publish.TcHmiGenerator TaskAction="EntryPage" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" TcHmiServerAddress="$(TcHmi_ServerAddress)" TcHmiServerPort="$(TcHmi_ServerPort)">
+      <Output TaskParameter="Result" PropertyName="TaskResult0" />
+    </TcHmiMSBuild.Publish.TcHmiGenerator>
+    <Message Text="Generating the Default.html within OutputPath('$(OutputPath)'): $(TaskResult0)" />
+  </Target>
+  <Target Name="Build" DependsOnTargets="$(BuiltProjectOutputGroupDependsOn)" />
+  <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
+  <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+    <Folder Include="Images" />
+    <Folder Include="Images\Manifest" />
+    <Folder Include="Images\Asset" />
+    <Folder Include="Images\PLC\" />
+    <Folder Include="Images\TwinCAT\" />
+    <Folder Include="Imports" />
+    <Folder Include="Imports\Images" />
+    <Folder Include="Imports\Videos" />
+    <Folder Include="KeyboardLayouts\" />
+    <Folder Include="Localization" />
+    <Folder Include="Pages\" />
+    <Folder Include="Pages\AirConditioner" />
+    <Folder Include="Pages\AirConditioner\Floor5" />
+    <Folder Include="Pages\AirConditioner\Floor7" />
+    <Folder Include="Pages\AirConditioner\FloorGF" />
+    <Folder Include="Pages\AirConditioner\FloorMZ" />
+    <Folder Include="Pages\AirConditioner\FloorMZ2" />
+    <Folder Include="Pages\AirConditioner\Floor2" />
+    <Folder Include="Pages\AirConditioner\Floor3" />
+    <Folder Include="Pages\AirConditioner\Floor6" />
+    <Folder Include="Pages\AirConditioner\Floor9" />
+    <Folder Include="Pages\AirConditioner\Floor8" />
+    <Folder Include="Pages\AirConditioner\Floor10" />
+    <Folder Include="Pages\AirConditioner\Floor11" />
+    <Folder Include="Pages\AirConditioner\Floor12" />
+    <Folder Include="Pages\AirConditioner\Floor15" />
+    <Folder Include="Pages\AirConditioner\Floor16" />
+    <Folder Include="Pages\AirConditioner\Floor17" />
+    <Folder Include="Pages\AirConditioner\Floor18" />
+    <Folder Include="Pages\AirConditioner\Floor19" />
+    <Folder Include="Pages\AirConditioner\Floor20" />
+    <Folder Include="Pages\AirConditioner\Floor21" />
+    <Folder Include="Pages\AirConditioner\Floor22" />
+    <Folder Include="Pages\AirConditioner\Floor23" />
+    <Folder Include="Pages\AirConditioner\Floor25" />
+    <Folder Include="Pages\AirConditioner\Floor26" />
+    <Folder Include="Pages\AirConditioner\Floor27" />
+    <Folder Include="Pages\AirConditioner\Floor28" />
+    <Folder Include="Pages\AirConditioner\Floor29" />
+    <Folder Include="Pages\AirConditioner\Floor30" />
+    <Folder Include="Pages\AirConditioner\Floor31" />
+    <Folder Include="Pages\AirConditioner\Floor32" />
+    <Folder Include="Pages\AirConditioner\Floor33" />
+    <Folder Include="Pages\AirConditioner\Floor35" />
+    <Folder Include="Pages\AirConditioner\Floor36" />
+    <Folder Include="Pages\AirConditioner\Floor37" />
+    <Folder Include="Pages\AirConditioner\Floor38" />
+    <Folder Include="Pages\AirConditioner\Floor39" />
+    <Folder Include="Pages\AirConditioner\Floor50" />
+    <Folder Include="Pages\AirConditioner\Floor51" />
+    <Folder Include="Pages\AirConditioner\Floor52" />
+    <Folder Include="Pages\AirConditioner\Floor53" />
+    <Folder Include="Pages\AirConditioner\Floor55" />
+    <Folder Include="Pages\AirConditioner\FloorPH1" />
+    <Folder Include="Pages\AirConditioner\FloorPH2" />
+    <Folder Include="Pages\AirConditioner\FloorPH3" />
+    <Folder Include="Pages\AirConditioner\FloorB1" />
+    <Folder Include="Pages\AirConditioner\FloorB2" />
+    <Folder Include="Pages\AirConditioner\Scheduler" />
+    <Folder Include="Server\ADS\" />
+    <Folder Include="Server\BaSite" />
+    <Folder Include="Server\TcHmiLua\" />
+    <Folder Include="Server\TcHmiSqliteLogger\" />
+    <Folder Include="Server\TcHmiSrv\" />
+    <Folder Include="Server\TcHmiUserManagement\" />
+    <Folder Include="Themes" />
+    <Folder Include="Themes\Base-Dark\Images\" />
+    <Folder Include="Themes\Base-Dark\Images\Events\" />
+    <Folder Include="Themes\Base-Dark\Images\Placeholder\" />
+    <Folder Include="Themes\Base-Dark\Images\Settings\" />
+    <Folder Include="Themes\Base\" />
+    <Folder Include="Themes\Base-Dark\" />
+    <Folder Include="Server">
+      <WorkingDirectory>IBMS_EB_HMI</WorkingDirectory>
+    </Folder>
+    <Folder Include="Properties" />
+    <Content Include=".eslintrc.json">
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan11_12.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan12.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan15_17_21_25.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan16_18_19_20_22_23_26.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan27.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan28_29.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan29.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan30.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan31.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan32_33_35_36_37_38_39_50_51_52.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan5.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan53.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan55.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan6_7_8.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlan9_10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlanGround.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlanMZ.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlanMZ2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlanPH1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlanPH2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\FloorPlanPH3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\Image IBMS-number.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\Image IBMS-number2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\Image IBMS-polos.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\The_Energy_Logo.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\AC_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_D5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_D6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_G3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor10\Floor10_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_A5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_A6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor11\Floor11_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_A5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_A6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_LMR1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor12\Floor12_LMR2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor15\Floor15_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor16\Floor16_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor17\Floor17_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor18\Floor18_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor19\Floor19_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor20\Floor20_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor21\Floor21_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor22\Floor22_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor23\Floor23_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor25\Floor25_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor26\Floor26_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor27\Floor27_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor28\Floor28_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_E3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_H.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_LMR1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor29\Floor29_LMR2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_11.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_12.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_13.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_14.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_15.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_16.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_17.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_18.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_19.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_20.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_21.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor2\Floor_2_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_G3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor30\Floor30_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_G3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor31\Floor31_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor32\Floor32_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor33\Floor33_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor35\Floor35_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor36\Floor36_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor37\Floor37_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor38\Floor38_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor39\Floor39_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_11.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_12.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_13.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_14.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_15.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_16.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_17.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_18.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_19.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_20.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_21.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_22.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_23.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_24.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_25.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_26.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor3\Floor3_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor50\Floor50_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor51\Floor51_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor52\Floor52_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_C3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_C4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_C5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_F3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_F4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_F5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_F6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor53\Floor53_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_11.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_12.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_13.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_14.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_15.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_16.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_17.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_18.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_19.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_20.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor55\Floor55_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_D5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_D6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_G3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor5\Floor5_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_D5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_D6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_G3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor6\Floor6_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_D5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_D6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_G3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor7\Floor7_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_D5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_D6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_G3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor8\Floor8_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_A1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_A2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_A3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_A4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_B1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_B2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_C1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_C2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_D1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_D2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_D3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_D4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_D5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_D6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_E1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_E2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_F1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_F2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_G1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_G2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_G3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Floor9\Floor9_L.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_11.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_12.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_13.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_14.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_15.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_L1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB1\FloorB1_L2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_11.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_IT1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorB2\FloorB2_IT2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_11.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_12.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_13.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_14.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_15.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_16.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_17.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_18.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_L1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGF\FloorG_L2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorGround.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ2\FloorMZ2_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ2\FloorMZ2_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ2\FloorMZ2_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ2\FloorMZ2_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ2\FloorMZ2_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ2\FloorMZ2_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ2\FloorMZ2_7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ2\FloorMZ2_8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_11.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_12.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_13.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_14.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_15.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_16.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_17.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_18.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_19.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_20.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_21.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorMZ\FloorMZ_9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH1\FloorPH1_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH1\FloorPH1_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH1\FloorPH1_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH1\FloorPH1_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH1\FloorPH1_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH1\FloorPH1_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH2\FloorPH2_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH2\FloorPH2_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH2\FloorPH2_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH2\FloorPH2_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH2\FloorPH2_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH2\FloorPH2_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH2\FloorPH2_7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH2\FloorPH2_8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH2\FloorPH2_9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH3\FloorPH3_1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH3\FloorPH3_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH3\FloorPH3_3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH3\FloorPH3_4.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH3\FloorPH3_5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH3\FloorPH3_6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH3\FloorPH3_7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH3\FloorPH3_8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\FloorPH3\FloorPH3_9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor10_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor11_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor12_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor15_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor16_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor17_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor18_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor19_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor20_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor21_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor22_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor23_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor25_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor26_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor27_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor28_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor29_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor2_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor30_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor31_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor32_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor33_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor35_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor36_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor37_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor38_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor39_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor3_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor50_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor51_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor52_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor53_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor55_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor5_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor6_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor7_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor8_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Floor9_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\FloorB1_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\FloorB2_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\FloorG_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\FloorMZ2_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\FloorMZ_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\FloorT1_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\FloorT2_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\FloorT3_Scheduler.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\AirConditioner\Scheduler\Power_Control.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil_test.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Dashboard.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Events.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Settings.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\BaSite\BaSite.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\BaSite\BaSite.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\BaSite\BaSite.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Themes\Base-Dark\Base-Dark.theme">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Base-DarkStyle.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Background.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Beckhoff_Logo.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Events\message_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Events\message_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Events\message_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Placeholder\placeholder_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Placeholder\placeholder_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Placeholder\placeholder_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Settings\settings_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Settings\settings_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Settings\settings_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-320x534.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-420x200.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-800x600.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Base.theme">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\BaseStyle.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Background.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Events\message_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Events\message_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Events\message_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Placeholder\placeholder_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Placeholder\placeholder_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Placeholder\placeholder_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Settings\settings_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Settings\settings_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Settings\settings_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-320x534.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-420x200.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-800x600.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="tsconfig.tpl.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="tsconfig.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>tsconfig.tpl.json</DependentUpon>
+    </Content>
+    <Content Include="packages.config">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="packages.xsd">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Properties\tchmiconfig.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmi.framework.Schema.tpl.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmi.framework.Schema.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>Properties\tchmi.framework.Schema.tpl.json</DependentUpon>
+    </Content>
+    <Content Include="Properties\tchmi.project.Schema.tpl.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmi.project.Schema.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>Properties\tchmi.project.Schema.tpl.json</DependentUpon>
+    </Content>
+    <Content Include="Properties\tchmipublish.config.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmimanifest.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\Default.tpl">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include=".tfignore">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include=".gitignore">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Fonts\Fonts.css">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Fonts\Roboto-Condensed-webfont.woff">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Localization\de.tpl.localization">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Localization\en.tpl.localization">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Localization\de.localization">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>Localization\de.tpl.localization</DependentUpon>
+    </Content>
+    <Content Include="Localization\en.localization">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>Localization\en.tpl.localization</DependentUpon>
+    </Content>
+    <Content Include="KeyboardLayouts\German - compact.keyboard.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="KeyboardLayouts\US - compact.keyboard.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="KeyboardLayouts\Numpad (plusminus).keyboard.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Favicon.ico">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Beckhoff_Logo.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-0-75x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-1-5x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-1x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-2x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-3x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-4x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\PLC\plc-config.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\PLC\plc-exeption.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\PLC\plc-fallback.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\PLC\plc-run.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\PLC\plc-stop.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\TwinCAT\twincat-config.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\TwinCAT\twincat-exeption.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\TwinCAT\twincat-fallback.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\TwinCAT\twincat-run.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\TwinCAT\twincat-stop.svg">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Pages\LoginPage.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Desktop.view">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Folder Include="Themes\Base\Images\" />
+    <Folder Include="Themes\Base\Images\Events\" />
+    <Folder Include="Themes\Base\Images\Placeholder\" />
+    <Folder Include="Themes\Base\Images\Settings\" />
+  </ItemGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props'))" />
+    <Error Condition="!Exists('$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets'))" />
+  </Target>
+  <Import Project="$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('$(SolutionDir)\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets')" />
+</Project>
