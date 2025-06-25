@@ -1,0 +1,1087 @@
+<div id="FloorMZ2_55" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0">
+
+    <div id="TcHmiRectangleMZ2_875" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height-unit="px" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="62" data-tchmi-bottom="50" data-tchmi-background-image="Themes/Base/Images/Background.png" data-tchmi-right-unit="%">
+    </div>
+    <div id="TcHmiGridMZ2_4" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="65" data-tchmi-bottom="250" data-tchmi-right-unit="%">
+
+        <script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+            [
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 0.5,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            },
+            {
+            "height": 1.0,
+            "heightUnit": "factor",
+            "heightMode": "Value",
+            "maxHeightUnit": "px",
+            "minHeightUnit": "px",
+            "overflow": false
+            }
+            ]
+        </script>
+        <div id="TcHmiTextblockMZ2_1850" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="FLOOR MZ2 CONTROL" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="35" data-tchmi-bottom="0" data-tchmi-right="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+        </div>
+
+
+        <div id="TcHmiTextblockMZ2_1851" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="3" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Start/Stop Status" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1852" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="4" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Temperature (°C)" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1853" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="3" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-top="2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Top">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_103::bReady%/s%",
+                "actions": [
+                {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                {
+                "if": [
+                {
+                "compare1": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_103::bReady%/s%"
+                },
+                "compare2": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+                }
+                ],
+                "then": [
+                {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                {
+                "if": [
+                {
+                "compare1": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_103::bPresVal%/s%"
+                },
+                "compare2": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+                }
+                ],
+                "then": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::BackgroundColor%/ctrl%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%tr%StatusOn%/tr%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::Text%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": "ON"
+                },
+                "asyncWait": true
+                }
+                ]
+                },
+                {
+                "else": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::BackgroundColor%/ctrl%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%tr%StatusOff%/tr%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::Text%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": "OFF"
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ],
+                "asyncWait": true
+                }
+                ]
+                },
+                {
+                "else": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::BackgroundColor%/ctrl%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::Text%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": "ERROR"
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ],
+                "asyncWait": true
+                }
+                ]
+                },
+                {
+                "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_103::bPresVal%/s%",
+                "actions": [
+                {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                {
+                "if": [
+                {
+                "compare1": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_103::bReady%/s%"
+                },
+                "compare2": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+                }
+                ],
+                "then": [
+                {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                {
+                "if": [
+                {
+                "compare1": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_103::bPresVal%/s%"
+                },
+                "compare2": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+                }
+                ],
+                "then": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::BackgroundColor%/ctrl%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%tr%StatusOn%/tr%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::Text%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": "ON"
+                },
+                "asyncWait": true
+                }
+                ]
+                },
+                {
+                "else": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::BackgroundColor%/ctrl%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%tr%StatusOff%/tr%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::Text%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": "OFF"
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ],
+                "asyncWait": true
+                }
+                ]
+                },
+                {
+                "else": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::BackgroundColor%/ctrl%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1853::Text%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": "ERROR"
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ],
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+        <div id="TcHmiTextblockMZ2_1854" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="10" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Start/Stop Control" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1855" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="4" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RoomTemp_103::fPresVal%/s%.toFixed(1);%/f%" data-tchmi-top="2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+
+        </div>
+        <div id="TcHmiTextblockMZ2_1856" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="11" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Remote Control Lock (ON/OFF)" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1857" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="12" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Temp. Setpoint Lock" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1858" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="13" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Temperature Setpoint" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1859" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="15" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="ALARM/SCHEDULE" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold">
+        </div>
+        <div id="TcHmiTextblockMZ2_1860" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="MONITORING" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold">
+        </div>
+        <div id="TcHmiTextblockMZ2_1861" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="17" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Filter Alarm" data-tchmi-top="-2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div data-tchmi-grid-row-index="10" data-tchmi-grid-column-index="0" id="TcHmiButtonMZ2_20" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="51" data-tchmi-left-unit="%" data-tchmi-text="START" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-height="25" data-tchmi-right-unit="%" data-tchmi-top="10" data-tchmi-right="27" data-tchmi-text-font-size="15" data-tchmi-is-enabled="%f%!%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_103::bPresVal%/s%%/f%">
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "TcHmiButtonMZ2_20.onStateChanged",
+                "actions": [
+                
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopCommand_103::bEnWrite%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopCommand_103::bVal%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+        <div data-tchmi-grid-row-index="10" data-tchmi-grid-column-index="0" id="TcHmiButtonMZ2_21" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="77" data-tchmi-left-unit="%" data-tchmi-text="STOP" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-height="25" data-tchmi-right-unit="%" data-tchmi-top="10" data-tchmi-right="1" data-tchmi-text-font-size="15" data-tchmi-is-enabled="%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopStatus_103::bPresVal%/s%">
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "TcHmiButtonMZ2_21.onStateChanged",
+                "actions": [
+                
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopCommand_103::bEnWrite%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::StartStopCommand_103::bVal%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": false
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+        <div id="TcHmiTextblockMZ2_1862" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="5" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Remote Control Lock Status" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="19" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1863" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="6" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Temp. Setpoint Lock Status" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="19" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1864" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="5" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlStart_103::bPresVal%/s%? &quot;LOCKED&quot; : &quot;UNLOCKED&quot;;%/f%" data-tchmi-top="2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+
+
+        </div>
+        <div id="TcHmiTextblockMZ2_1865" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="6" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlTempAdjust_103::bPresVal%/s%? &quot;LOCKED&quot; : &quot;UNLOCKED&quot;;%/f%" data-tchmi-top="2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+
+
+        </div>
+        <div data-tchmi-grid-row-index="11" data-tchmi-grid-column-index="0" id="TcHmiButtonMZ2_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="51" data-tchmi-left-unit="%" data-tchmi-text="LOCK" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-height="25" data-tchmi-right-unit="%" data-tchmi-top="10" data-tchmi-right="27" data-tchmi-text-font-size="15" data-tchmi-is-enabled="%f%!%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlStart_103::bPresVal%/s%%/f%">
+
+
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "TcHmiButtonMZ2_22.onStateChanged",
+                "actions": [
+                
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlStart_103::bEnWrite%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlStart_103::bVal%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+        <div data-tchmi-grid-row-index="11" data-tchmi-grid-column-index="0" id="TcHmiButtonMZ2_23" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="77" data-tchmi-left-unit="%" data-tchmi-text="UNLOCK" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-height="25" data-tchmi-right-unit="%" data-tchmi-top="10" data-tchmi-right="1" data-tchmi-text-font-size="15" data-tchmi-is-enabled="%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlStart_103::bPresVal%/s%">
+
+
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "TcHmiButtonMZ2_23.onStateChanged",
+                "actions": [
+                
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlStart_103::bEnWrite%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlStart_103::bVal%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": false
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+        <div data-tchmi-grid-row-index="12" data-tchmi-grid-column-index="0" id="TcHmiButtonMZ2_24" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="51" data-tchmi-left-unit="%" data-tchmi-text="LOCK" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-height="25" data-tchmi-right-unit="%" data-tchmi-top="10" data-tchmi-right="27" data-tchmi-text-font-size="15" data-tchmi-is-enabled="%f%!%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlTempAdjust_103::bPresVal%/s%%/f%">
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "TcHmiButtonMZ2_24.onStateChanged",
+                "actions": [
+                
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlTempAdjust_103::bEnWrite%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlTempAdjust_103::bVal%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+        <div data-tchmi-grid-row-index="12" data-tchmi-grid-column-index="0" id="TcHmiButtonMZ2_25" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="77" data-tchmi-left-unit="%" data-tchmi-text="UNLOCK" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-height="25" data-tchmi-right-unit="%" data-tchmi-top="10" data-tchmi-right="1" data-tchmi-text-font-size="15" data-tchmi-is-enabled="%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlTempAdjust_103::bPresVal%/s%">
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "TcHmiButtonMZ2_25.onStateChanged",
+                "actions": [
+                
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlTempAdjust_103::bEnWrite%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::RemoteControlTempAdjust_103::bVal%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": false
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+        <div id="TcHmiNumericInputMZ2_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="13" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-max-value="35" data-tchmi-min-value="16" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="6" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="%" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="19" data-tchmi-system-keyboard-input-mode="decimal" data-tchmi-zero-padding="0" data-tchmi-value="%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::TempAdjust_103::fPresVal%/s%">
+            <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+                {
+                "top": 3,
+                "right": 3,
+                "bottom": 3,
+                "left": 3
+                }
+            </script>
+
+
+
+
+
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "TcHmiNumericInputMZ2_2.onUserInteractionFinished",
+                "actions": [
+                
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::TempAdjust_103::bEnWrite%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::TempAdjust_103::fVal%/s%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%ctrl%TcHmiNumericInputMZ2_2::Value%/ctrl%"
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+
+            <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+                {
+                "left": 1,
+                "right": 1,
+                "top": 1,
+                "bottom": 1,
+                "leftUnit": "px",
+                "rightUnit": "px",
+                "topUnit": "px",
+                "bottomUnit": "px"
+                }
+            </script>
+
+            <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+                {
+                "left": "Solid",
+                "right": "Solid",
+                "top": "Solid",
+                "bottom": "Solid"
+                }
+            </script>
+        </div>
+        <div id="TcHmiTextblockMZ2_1866" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="16" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-text="" data-tchmi-top="2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::Alarm_103::bPresVal%/s%",
+                "actions": [
+                {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                {
+                "if": [
+                {
+                "compare1": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::Alarm_103::bPresVal%/s%"
+                },
+                "compare2": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+                }
+                ],
+                "then": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1866::BackgroundColor%/ctrl%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1866::Text%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": "ERROR"
+                },
+                "asyncWait": true
+                }
+                ]
+                },
+                {
+                "else": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1866::BackgroundColor%/ctrl%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%tr%StatusOn%/tr%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1866::Text%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": "NORMAL"
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ],
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+        <div id="TcHmiTextblockMZ2_1867" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="17" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-text="" data-tchmi-top="2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::FilterSign_103::bPresVal%/s%",
+                "actions": [
+                {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                {
+                "if": [
+                {
+                "compare1": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::FilterSign_103::bPresVal%/s%"
+                },
+                "compare2": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+                }
+                ],
+                "then": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1867::BackgroundColor%/ctrl%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1867::Text%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": "ERROR"
+                },
+                "asyncWait": true
+                }
+                ]
+                },
+                {
+                "else": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1867::BackgroundColor%/ctrl%",
+                "value": {
+                "objectType": "Symbol",
+                "valueType": "tchmi:general#/definitions/String",
+                "symbolExpression": "%tr%StatusOn%/tr%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblockMZ2_1867::Text%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": "NORMAL"
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ],
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+        <div id="TcHmiTextblockMZ2_1868" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="7" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Temperature Setpoint (Read)" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1869" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="7" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-top="2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::TempAdjust_103::fPresVal%/s%.toFixed(1);%/f%">
+
+        </div>
+        <div id="TcHmiTextblockMZ2_1870" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="9" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="CONTROL" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold">
+        </div>
+        <div id="TcHmiTextblockMZ2_1871" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="16" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Alarm Sign" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1872" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="18" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Malfunction Code" data-tchmi-top="-2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1873" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="18" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-text="%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::MalfunctionCode_103::nPresVal%/s%" data-tchmi-top="2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div id="TcHmiTextblockMZ2_1874" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="19" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Filter Alarm Reset" data-tchmi-top="-2" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="50" data-tchmi-bottom="2" data-tchmi-right-unit="%" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        </div>
+        <div data-tchmi-grid-row-index="19" data-tchmi-grid-column-index="0" id="TcHmiButtonMZ2_26" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="px" data-tchmi-left="55" data-tchmi-left-unit="%" data-tchmi-text="RESET" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-height="25" data-tchmi-right-unit="%" data-tchmi-top="5" data-tchmi-right="5" data-tchmi-text-font-size="15" data-tchmi-is-enabled="%f%%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::FilterSignReset_103::bPresVal%/s%%/f%">
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "TcHmiButtonMZ2_26.onStateChanged",
+                "actions": [
+                
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::FilterSignReset_103::bEnWrite%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%IBMS.MAIN.FB_BACnet_DAIKIN_MasterStation_III_No_1::FilterSignReset_103::bVal%/s%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": false
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+    </div>
+    <div id="TcHmiEventGridMZ2_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEventGrid" data-tchmi-height-unit="px" data-tchmi-left="40" data-tchmi-left-unit="%" data-tchmi-server-interval="1000" data-tchmi-show-menu-bar="true" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-bottom="50" data-tchmi-right="52">
+        <script data-tchmi-target-attribute="data-tchmi-filter" type="application/json">
+            [
+            {
+            "path": "domain",
+            "comparator": "==",
+            "value": "TcHmiEventLogger"
+            },
+            {
+            "logic": "OR"
+            },
+            {
+            "path": "domain",
+            "comparator": "==",
+            "value": "TcHmiAlarm"
+            }
+            ]
+        </script>
+        <script data-tchmi-target-attribute="data-tchmi-columns" type="application/json">
+            [
+            {
+            "columnName": "type"
+            },
+            {
+            "columnName": "severity"
+            },
+            {
+            "columnName": "timeAndDateRaised"
+            },
+            {
+            "columnName": "text",
+            "width": 1,
+            "widthUnit": "factor"
+            }
+            ]
+        </script>
+        <script data-tchmi-target-attribute="data-tchmi-sorting" type="application/json">
+            [
+            {
+            "name": "timeRaised",
+            "order": "Descending"
+            }
+            ]
+        </script>
+
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 0.0,
+            "topRight": 0.0,
+            "bottomLeft": 0.0,
+            "bottomRight": 0.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 1,
+            "right": 1,
+            "top": 1,
+            "bottom": 1,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+    </div>
+</div>
