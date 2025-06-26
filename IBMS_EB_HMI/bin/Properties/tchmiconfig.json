@@ -8553,6 +8553,18 @@
             "color": "rgba(255, 175, 6, 1)"
           }
         }
+      },
+      "bgc_1": {
+        "type": "tchmi:framework#/definitions/Color",
+        "description": "",
+        "values": {
+          "Base": {
+            "color": "rgba(173, 169, 169, 0.3921568)"
+          },
+          "Base-Dark": {
+            "color": "rgba(173, 169, 169, 0.3921568)"
+          }
+        }
       }
     }
   },

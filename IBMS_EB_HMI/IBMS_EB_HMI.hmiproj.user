@@ -23,9 +23,7 @@
   65.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolInternalTree>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_symbolLocalizedTree>[
-  300.0,
-  100.0,
-  100.0
+  300.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_symbolLocalizedTree>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_extensionLocalizationsTree>[
   300.0
@@ -69,9 +67,7 @@
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlTypeAttributesTree>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_ThemedResourceTree>[
   200.0,
-  300.0,
-  100.0,
-  100.0
+  300.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ThemedResourceTree>
     <TcHmiEditor_SplitAreaStates>{
   "EditorSettings": [
@@ -92,13 +88,46 @@
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
       "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\FloorGround.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
     }
   ]
 }</TcHmiEditor_SplitAreaStates>
     <RecentColors>[
   {
     "counter": 0,
+    "color": "#64ADA9A9"
+  },
+  {
+    "counter": 0,
+    "color": "#0AADA9A9"
+  },
+  {
+    "counter": 0,
+    "color": "#FFADA9A9"
+  },
+  {
+    "counter": 0,
     "color": "#FFFFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF90101"
+  },
+  {
+    "counter": 0,
+    "color": "#FFFF0505"
+  },
+  {
+    "counter": 0,
+    "color": "#FFFB1B1B"
   },
   {
     "counter": 0,
@@ -106,75 +135,51 @@
   },
   {
     "counter": 0,
-    "color": null
+    "color": "#FFED0E0E"
   },
   {
     "counter": 0,
-    "color": null
+    "color": ""
   },
   {
     "counter": 0,
-    "color": null
+    "color": ""
   },
   {
     "counter": 0,
-    "color": null
+    "color": ""
   },
   {
     "counter": 0,
-    "color": null
+    "color": ""
   },
   {
     "counter": 0,
-    "color": null
+    "color": ""
   },
   {
     "counter": 0,
-    "color": null
+    "color": ""
   },
   {
     "counter": 0,
-    "color": null
+    "color": ""
   },
   {
     "counter": 0,
-    "color": null
+    "color": ""
   },
   {
     "counter": 0,
-    "color": null
+    "color": ""
   },
   {
     "counter": 0,
-    "color": null
+    "color": ""
   },
   {
     "counter": 0,
-    "color": null
-  },
-  {
-    "counter": 0,
-    "color": null
-  },
-  {
-    "counter": 0,
-    "color": null
-  },
-  {
-    "counter": 0,
-    "color": null
-  },
-  {
-    "counter": 0,
-    "color": null
-  },
-  {
-    "counter": 0,
-    "color": null
-  },
-  {
-    "counter": 0,
-    "color": null
+    "color": ""
   }
 ]</RecentColors>
   </PropertyGroup>

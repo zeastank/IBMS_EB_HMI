@@ -4541,7 +4541,17 @@
     "content": "Pages/Azbil_test.content",
     "icon_a": "%tr%TR_Icon_AirConditioner_active%/tr%",
     "icon_n": "%tr%TR_Icon_AirConditioner_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_AirConditioner_pressed%/tr%"
+    "icon_p": "%tr%TR_Icon_AirConditioner_pressed%/tr%",
+    "subItem": [
+      {
+        "name": "Ground Floor",
+        "content": "Pages/Azbil/FloorGround.content"
+      },
+      {
+        "name": "Floor2",
+        "content": "Pages/Azbil/Floor2.content"
+      }
+    ]
   },
   {
     "name": "%l%L_Events%/l%",

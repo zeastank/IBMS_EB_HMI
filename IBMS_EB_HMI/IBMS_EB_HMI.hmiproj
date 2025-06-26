@@ -174,6 +174,8 @@
     <Folder Include="Pages\AirConditioner\FloorB1" />
     <Folder Include="Pages\AirConditioner\FloorB2" />
     <Folder Include="Pages\AirConditioner\Scheduler" />
+    <Folder Include="Pages\Azbil" />
+    <Folder Include="Pages\Azbil\floorGF" />
     <Folder Include="Server\ADS\" />
     <Folder Include="Server\BaSite" />
     <Folder Include="Server\TcHmiLua\" />
@@ -3465,6 +3467,33 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\AirConditioner\Scheduler\Power_Control.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor9.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor8.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor7.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor6.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor5.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\FloorGround.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Azbil_test.content">

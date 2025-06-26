@@ -7503,6 +7503,69 @@
       "preloadBindings": false
     },
     {
+      "url": "Pages/Azbil/Floor2.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Azbil/Floor3.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Azbil/Floor10.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Azbil/Floor9.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Azbil/Floor8.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Azbil/Floor7.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Azbil/Floor6.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Azbil/Floor5.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Azbil/FloorGround.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Pages/Azbil_test.content",
       "preload": false,
       "keepAlive": false,
@@ -8551,6 +8614,18 @@
           },
           "Base-Dark": {
             "color": "rgba(255, 175, 6, 1)"
+          }
+        }
+      },
+      "bgc_1": {
+        "type": "tchmi:framework#/definitions/Color",
+        "description": "",
+        "values": {
+          "Base": {
+            "color": "rgba(173, 169, 169, 0.3921568)"
+          },
+          "Base-Dark": {
+            "color": "rgba(173, 169, 169, 0.3921568)"
           }
         }
       }
