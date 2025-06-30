@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>IBMS_EB_HMI</Name>
-    <HmiCommunicationRouterPort>10101</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10102</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.762.46</HmiInitial>
     <HmiRecent>1.12.762.46</HmiRecent>
@@ -3470,13 +3470,109 @@
     <Content Include="Pages\AirConditioner\Scheduler\Power_Control.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\Azbil\Floor11.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor12.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor15.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor16.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor17.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor18.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor19.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Pages\Azbil\Floor2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor20.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor21.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor22.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor23.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor25.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor26.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor27.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor28.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor29.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Azbil\Floor3.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Azbil\Floor10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor30.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor31.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor32.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor33.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor35.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor36.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor37.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor38.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor39.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor50.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor51.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor52.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor53.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\FloorPH3.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\FloorPH2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\Floor55.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Azbil\Floor9.content">
