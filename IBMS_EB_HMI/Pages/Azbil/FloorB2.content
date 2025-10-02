@@ -1,0 +1,1515 @@
+<div id="Floor3_31" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0"
+  data-tchmi-right="0" data-tchmi-bottom="0">
+  <div id="TcHmiRectangle_1088" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="150"
+    data-tchmi-height-unit="px" data-tchmi-left="487" data-tchmi-left-unit="px" data-tchmi-top="186"
+    data-tchmi-top-unit="px" data-tchmi-width="151" data-tchmi-width-unit="px"
+    data-tchmi-background-color="%tr%bgc_1%/tr%"></div>
+  <div id="TcHmiTextblockG_2020" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="502" data-tchmi-left-unit="px" data-tchmi-text="IF-B2.1"
+    data-tchmi-top="186" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="32" data-tchmi-text-horizontal-alignment="Center"></div>
+  <div id="Button_222" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="498"
+    data-tchmi-left-unit="px" data-tchmi-top="232" data-tchmi-top-unit="px" data-tchmi-width="63"
+    data-tchmi-width-unit="px" data-tchmi-text="START"
+    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_1_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "Button_222.onButtonPressed",
+          "actions": [
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_1_S_S::bEnWrite%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_1_S_S::bVal%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="Button_223" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="568"
+    data-tchmi-left-unit="px" data-tchmi-top="232" data-tchmi-top-unit="px" data-tchmi-width="59"
+    data-tchmi-width-unit="px" data-tchmi-text="STOP"
+    data-tchmi-is-enabled="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_1_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "Button_223.onButtonPressed",
+          "actions": [
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_1_S_S::bEnWrite%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_1_S_S::bVal%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": false
+              },
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="Icon_116" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Icon" data-tchmi-height="30"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="502"
+    data-tchmi-left-unit="px" data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-width="30"
+    data-tchmi-width-unit="px" data-tchmi-icon="Imports/Images/ventilation-pressed.svg" data-tchmi-icon-width="160"
+    data-tchmi-icon-height="150">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_1_ST::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_1_ST::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_116::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_116::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiTextblockG_2021" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="523" data-tchmi-left-unit="px" data-tchmi-text="STATUS"
+    data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-font-weight="Bold"></div>
+  <div id="TcHmiTextblock_2306" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-left="498" data-tchmi-left-unit="px" data-tchmi-top="304"
+    data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_1_TR::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_1_TR::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2306::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2306::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "ALARM"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2306::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2306::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "NORMAL"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiTextblock_2307" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="28"
+    data-tchmi-height-unit="px" data-tchmi-left="568" data-tchmi-left-unit="px" data-tchmi-text="TRIP"
+    data-tchmi-top="304" data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="20"></div>
+  <div id="TcHmiRectangle_1089" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="150"
+    data-tchmi-height-unit="px" data-tchmi-left="708" data-tchmi-left-unit="px" data-tchmi-top="186"
+    data-tchmi-top-unit="px" data-tchmi-width="151" data-tchmi-width-unit="px"
+    data-tchmi-background-color="%tr%bgc_1%/tr%"></div>
+  <div id="Button_224" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="722"
+    data-tchmi-left-unit="px" data-tchmi-top="232" data-tchmi-top-unit="px" data-tchmi-width="63"
+    data-tchmi-width-unit="px" data-tchmi-text="START"
+    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_1_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "Button_224.onButtonPressed",
+          "actions": [
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_1_S_S::bEnWrite%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_1_S_S::bVal%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiTextblockG_2022" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="729" data-tchmi-left-unit="px" data-tchmi-text="EF-B2.1"
+    data-tchmi-top="186" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="32" data-tchmi-text-horizontal-alignment="Center">
+
+  </div>
+  <div id="Button_225" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="793"
+    data-tchmi-left-unit="px" data-tchmi-top="232" data-tchmi-top-unit="px" data-tchmi-width="59"
+    data-tchmi-width-unit="px" data-tchmi-text="STOP"
+    data-tchmi-is-enabled="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_1_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [
+            {
+              "event": "Button_225.onButtonPressed",
+              "actions": [
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_1_S_S::bEnWrite%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": true
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_1_S_S::bVal%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": false
+                  },
+                  "asyncWait": true
+                }
+              ]
+            }
+          ]
+        </script>
+  </div>
+  <div id="Icon_117" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Icon" data-tchmi-height="30"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="722"
+    data-tchmi-left-unit="px" data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-width="30"
+    data-tchmi-width-unit="px" data-tchmi-icon="Imports/Images/ventilation-pressed.svg" data-tchmi-icon-width="160"
+    data-tchmi-icon-height="150">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_1_ST::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_1_ST::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_117::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_117::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiTextblockG_2023" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="741" data-tchmi-left-unit="px" data-tchmi-text="STATUS"
+    data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-font-weight="Bold"></div>
+  <div id="TcHmiTextblock_2308" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-left="722" data-tchmi-left-unit="px" data-tchmi-top="304"
+    data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_1_TR::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_1_TR::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2308::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2308::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "ALARM"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2308::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2308::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "NORMAL"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiTextblock_2309" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="28"
+    data-tchmi-height-unit="px" data-tchmi-left="791" data-tchmi-left-unit="px" data-tchmi-text="TRIP"
+    data-tchmi-top="302" data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="20"></div>
+  <div id="TcHmiRectangle_1090" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="150"
+    data-tchmi-height-unit="px" data-tchmi-left="932" data-tchmi-left-unit="px" data-tchmi-top="186"
+    data-tchmi-top-unit="px" data-tchmi-width="151" data-tchmi-width-unit="px"
+    data-tchmi-background-color="%tr%bgc_1%/tr%">
+  </div>
+  <div id="TcHmiTextblockG_2024" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="951" data-tchmi-left-unit="px" data-tchmi-text="IF-B2.2"
+    data-tchmi-top="186" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="32" data-tchmi-text-horizontal-alignment="Center">
+  </div>
+  <div id="Button_226" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="942"
+    data-tchmi-left-unit="px" data-tchmi-top="232" data-tchmi-top-unit="px" data-tchmi-width="63"
+    data-tchmi-width-unit="px" data-tchmi-text="START"
+    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_2_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "Button_226.onButtonPressed",
+          "actions": [
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_2_S_S::bEnWrite%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_2_S_S::bVal%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="Button_227" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="1015"
+    data-tchmi-left-unit="px" data-tchmi-top="232" data-tchmi-top-unit="px" data-tchmi-width="59"
+    data-tchmi-width-unit="px" data-tchmi-text="STOP"
+    data-tchmi-is-enabled="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_2_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [
+            {
+              "event": "Button_227.onButtonPressed",
+              "actions": [
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_2_S_S::bEnWrite%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": true
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_2_S_S::bVal%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": false
+                  },
+                  "asyncWait": true
+                }
+              ]
+            }
+          ]
+        </script>
+  </div>
+  <div id="Icon_118" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Icon" data-tchmi-height="30"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="942"
+    data-tchmi-left-unit="px" data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-width="30"
+    data-tchmi-width-unit="px" data-tchmi-icon="Imports/Images/ventilation-pressed.svg" data-tchmi-icon-width="160"
+    data-tchmi-icon-height="150">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_2_ST::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_2_ST::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_118::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_118::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiTextblockG_2025" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="963" data-tchmi-left-unit="px" data-tchmi-text="STATUS"
+    data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-font-weight="Bold">
+  </div>
+  <div id="TcHmiTextblock_2310" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="28"
+    data-tchmi-height-unit="px" data-tchmi-left="1013" data-tchmi-left-unit="px" data-tchmi-text="TRIP"
+    data-tchmi-top="302" data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="20">
+  </div>
+  <div id="TcHmiTextblock_2311" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-left="942" data-tchmi-left-unit="px" data-tchmi-top="304"
+    data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_2_TR::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_2_TR::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2311::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2311::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "ALARM"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2311::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2311::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "NORMAL"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiRectangle_1091" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="150"
+    data-tchmi-height-unit="px" data-tchmi-left="487" data-tchmi-left-unit="px" data-tchmi-top="395"
+    data-tchmi-top-unit="px" data-tchmi-width="151" data-tchmi-width-unit="px"
+    data-tchmi-background-color="%tr%bgc_1%/tr%">
+  </div>
+  <div id="TcHmiTextblockG_2026" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="508" data-tchmi-left-unit="px" data-tchmi-text="EF-B2.2"
+    data-tchmi-top="395" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="32" data-tchmi-text-horizontal-alignment="Center">
+  </div>
+  <div id="Button_228" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="498"
+    data-tchmi-left-unit="px" data-tchmi-top="441" data-tchmi-top-unit="px" data-tchmi-width="63"
+    data-tchmi-width-unit="px" data-tchmi-text="START"
+    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_2_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "Button_228.onButtonPressed",
+          "actions": [
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_2_S_S::bEnWrite%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_2_S_S::bVal%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="Button_229" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="570"
+    data-tchmi-left-unit="px" data-tchmi-top="441" data-tchmi-top-unit="px" data-tchmi-width="59"
+    data-tchmi-width-unit="px" data-tchmi-text="STOP"
+    data-tchmi-is-enabled="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_2_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [
+            {
+              "event": "Button_229.onButtonPressed",
+              "actions": [
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_2_S_S::bEnWrite%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": true
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_2_S_S::bVal%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": false
+                  },
+                  "asyncWait": true
+                }
+              ]
+            }
+          ]
+        </script>
+  </div>
+  <div id="Icon_119" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Icon" data-tchmi-height="30"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="500"
+    data-tchmi-left-unit="px" data-tchmi-top="474" data-tchmi-top-unit="px" data-tchmi-width="30"
+    data-tchmi-width-unit="px" data-tchmi-icon="Imports/Images/ventilation-pressed.svg" data-tchmi-icon-width="160"
+    data-tchmi-icon-height="150">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_2_ST::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_2_ST::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_119::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_119::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiTextblockG_2027" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="516" data-tchmi-left-unit="px" data-tchmi-text="STATUS"
+    data-tchmi-top="474" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-font-weight="Bold">
+  </div>
+  <div id="TcHmiTextblock_2312" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="28"
+    data-tchmi-height-unit="px" data-tchmi-left="568" data-tchmi-left-unit="px" data-tchmi-text="TRIP"
+    data-tchmi-top="509" data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="20">
+  </div>
+  <div id="TcHmiTextblock_2313" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-left="498" data-tchmi-left-unit="px" data-tchmi-top="512"
+    data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_2_TR::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_2_TR::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2313::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2313::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "ALARM"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2313::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2313::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "NORMAL"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiRectangle_1092" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="150"
+    data-tchmi-height-unit="px" data-tchmi-left="708" data-tchmi-left-unit="px" data-tchmi-top="395"
+    data-tchmi-top-unit="px" data-tchmi-width="151" data-tchmi-width-unit="px"
+    data-tchmi-background-color="%tr%bgc_1%/tr%">
+  </div>
+  <div id="TcHmiTextblockG_2028" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="729" data-tchmi-left-unit="px" data-tchmi-text="IF-B2.3"
+    data-tchmi-top="395" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="32" data-tchmi-text-horizontal-alignment="Center">
+  </div>
+  <div id="Button_230" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="722"
+    data-tchmi-left-unit="px" data-tchmi-top="441" data-tchmi-top-unit="px" data-tchmi-width="63"
+    data-tchmi-width-unit="px" data-tchmi-text="START"
+    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_3_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "Button_230.onButtonPressed",
+          "actions": [
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_3_S_S::bEnWrite%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_3_S_S::bVal%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="Button_231" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="793"
+    data-tchmi-left-unit="px" data-tchmi-top="441" data-tchmi-top-unit="px" data-tchmi-width="59"
+    data-tchmi-width-unit="px" data-tchmi-text="STOP"
+    data-tchmi-is-enabled="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_3_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [
+            {
+              "event": "Button_231.onButtonPressed",
+              "actions": [
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_3_S_S::bEnWrite%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": true
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_3_S_S::bVal%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": false
+                  },
+                  "asyncWait": true
+                }
+              ]
+            }
+          ]
+        </script>
+  </div>
+  <div id="Icon_120" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Icon" data-tchmi-height="30"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="722"
+    data-tchmi-left-unit="px" data-tchmi-top="474" data-tchmi-top-unit="px" data-tchmi-width="30"
+    data-tchmi-width-unit="px" data-tchmi-icon="Imports/Images/ventilation-pressed.svg" data-tchmi-icon-width="160"
+    data-tchmi-icon-height="150">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_3_ST::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_3_ST::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_120::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_120::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiTextblockG_2029" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="736" data-tchmi-left-unit="px" data-tchmi-text="STATUS"
+    data-tchmi-top="477" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-font-weight="Bold">
+  </div>
+  <div id="TcHmiTextblock_2314" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="28"
+    data-tchmi-height-unit="px" data-tchmi-left="790" data-tchmi-left-unit="px" data-tchmi-text="TRIP"
+    data-tchmi-top="511" data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="20">
+  </div>
+  <div id="TcHmiTextblock_2315" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-left="722" data-tchmi-left-unit="px" data-tchmi-top="512"
+    data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_3_TR::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_B2_3_TR::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2315::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2315::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "ALARM"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2315::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2315::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "NORMAL"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiRectangle_1093" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="150"
+    data-tchmi-height-unit="px" data-tchmi-left="932" data-tchmi-left-unit="px" data-tchmi-top="395"
+    data-tchmi-top-unit="px" data-tchmi-width="151" data-tchmi-width-unit="px"
+    data-tchmi-background-color="%tr%bgc_1%/tr%">
+  </div>
+  <div id="TcHmiTextblockG_2030" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="951" data-tchmi-left-unit="px" data-tchmi-text="EF-B2.3"
+    data-tchmi-top="395" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="32" data-tchmi-text-horizontal-alignment="Center">
+  </div>
+  <div id="Button_232" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="942"
+    data-tchmi-left-unit="px" data-tchmi-top="441" data-tchmi-top-unit="px" data-tchmi-width="63"
+    data-tchmi-width-unit="px" data-tchmi-text="START"
+    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_3_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "Button_232.onButtonPressed",
+          "actions": [
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_3_S_S::bEnWrite%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_3_S_S::bVal%/s%",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:general#/definitions/BOOL",
+                "value": true
+              },
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="Button_233" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="1015"
+    data-tchmi-left-unit="px" data-tchmi-top="441" data-tchmi-top-unit="px" data-tchmi-width="59"
+    data-tchmi-width-unit="px" data-tchmi-text="STOP"
+    data-tchmi-is-enabled="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_3_S_S::bPresVal%/s%%/f%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [
+            {
+              "event": "Button_233.onButtonPressed",
+              "actions": [
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_3_S_S::bEnWrite%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": true
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_3_S_S::bVal%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": false
+                  },
+                  "asyncWait": true
+                }
+              ]
+            }
+          ]
+        </script>
+  </div>
+  <div id="Icon_121" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Icon" data-tchmi-height="30"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="942"
+    data-tchmi-left-unit="px" data-tchmi-top="474" data-tchmi-top-unit="px" data-tchmi-width="30"
+    data-tchmi-width-unit="px" data-tchmi-icon="Imports/Images/ventilation-pressed.svg" data-tchmi-icon-width="160"
+    data-tchmi-icon-height="150">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_3_ST::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_3_ST::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_121::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%Icon_121::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+  <div id="TcHmiTextblockG_2031" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36"
+    data-tchmi-height-unit="px" data-tchmi-left="963" data-tchmi-left-unit="px" data-tchmi-text="STATUS"
+    data-tchmi-top="474" data-tchmi-top-unit="px" data-tchmi-width="111" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-font-weight="Bold">
+  </div>
+  <div id="TcHmiTextblock_2316" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="28"
+    data-tchmi-height-unit="px" data-tchmi-left="1011" data-tchmi-left-unit="px" data-tchmi-text="TRIP"
+    data-tchmi-top="510" data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="20">
+  </div>
+  <div id="TcHmiTextblock_2317" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26"
+    data-tchmi-height-unit="px" data-tchmi-left="942" data-tchmi-left-unit="px" data-tchmi-top="512"
+    data-tchmi-top-unit="px" data-tchmi-width="64" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [
+        {
+          "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_3_TR::bPresVal%/s%",
+          "actions": [
+            {
+              "objectType": "Condition",
+              "active": true,
+              "parts": [
+                {
+                  "if": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_B2_3_TR::bPresVal%/s%"
+                      },
+                      "compare2": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/BOOL",
+                        "value": true
+                      },
+                      "compareOperator": "==",
+                      "logic": null
+                    }
+                  ],
+                  "then": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2317::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusError%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2317::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "ALARM"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2317::BackgroundColor%/ctrl%",
+                      "value": {
+                        "objectType": "Symbol",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "symbolExpression": "%tr%StatusOn%/tr%"
+                      },
+                      "asyncWait": true
+                    },
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiTextblock_2317::Text%/ctrl%",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "NORMAL"
+                      },
+                      "asyncWait": true
+                    }
+                  ]
+                }
+              ],
+              "asyncWait": true
+            }
+          ]
+        }
+      ]
+    </script>
+  </div>
+</div>
