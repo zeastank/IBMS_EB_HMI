@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <TcHmiEditor_SelectBindingWindowDimension>156;156;958;672</TcHmiEditor_SelectBindingWindowDimension>
+    <TcHmiEditor_SelectBindingWindowDimension>316;96;958;672</TcHmiEditor_SelectBindingWindowDimension>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>[
-  200.0,
+  280.0,
   50.0,
   180.0,
   80.0,
@@ -11,7 +11,7 @@
   100.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolServerTree>[
-  280.0,
+  304.0,
   300.0,
   220.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolServerTree>
@@ -385,13 +385,83 @@
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
       "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\Chiller.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\AHU2.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\FloorB2.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\AirConditioner\\Floor23.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\CleanWater.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\FloorB5.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
     }
   ]
 }</TcHmiEditor_SplitAreaStates>
     <RecentColors>[
   {
     "counter": 0,
-    "color": "#C80051FF"
+    "color": "#FFEAE216"
+  },
+  {
+    "counter": 0,
+    "color": "#FFEFE60C"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF4E212"
+  },
+  {
+    "counter": 0,
+    "color": "#FFB4A827"
+  },
+  {
+    "counter": 0,
+    "color": "#FFDBCB13"
   },
   {
     "counter": 0,
@@ -399,71 +469,55 @@
   },
   {
     "counter": 0,
+    "color": "#FFE5E519"
+  },
+  {
+    "counter": 0,
+    "color": "#FFD4D40B"
+  },
+  {
+    "counter": 0,
+    "color": "#FFECEC24"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF6F612"
+  },
+  {
+    "counter": 0,
+    "color": "#C80051FF"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF11515"
+  },
+  {
+    "counter": 0,
+    "color": "#FFEA1818"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF91E1E"
+  },
+  {
+    "counter": 0,
+    "color": "#FFE32D2D"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF11C1C"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF31A1A"
+  },
+  {
+    "counter": 0,
+    "color": "#FFEF2323"
+  },
+  {
+    "counter": 0,
     "color": "#FF000000"
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
-  },
-  {
-    "counter": 0,
-    "color": ""
   },
   {
     "counter": 0,
