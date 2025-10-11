@@ -67,7 +67,9 @@
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlTypeAttributesTree>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_ThemedResourceTree>[
   200.0,
-  300.0
+  300.0,
+  100.0,
+  100.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ThemedResourceTree>
     <TcHmiEditor_SplitAreaStates>{
   "EditorSettings": [
@@ -433,6 +435,15 @@
     },
     {
       "Path": "Pages\\Azbil\\FloorB5.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\SSP.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
