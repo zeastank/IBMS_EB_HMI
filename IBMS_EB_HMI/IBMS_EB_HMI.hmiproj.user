@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TcHmiEditor_SelectBindingWindowDimension>316;96;958;672</TcHmiEditor_SelectBindingWindowDimension>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>[
-  280.0,
+  293.0,
   50.0,
   180.0,
   80.0,
@@ -451,6 +451,15 @@
     },
     {
       "Path": "Pages\\Azbil\\DSP.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\AHULobby.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
