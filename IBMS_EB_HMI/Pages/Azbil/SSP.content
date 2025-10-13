@@ -599,7 +599,7 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SSP_4B_AUTO_MAN_ST::bPresVal%/s%",
+    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::DELIVERY_PUMP_1_ON_OF::bPresVal%/s%",
     "actions": [
       {
         "objectType": "Condition",
@@ -611,7 +611,7 @@
                 "compare1": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/BOOL",
-                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SSP_4B_AUTO_MAN_ST::bPresVal%/s%"
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::DELIVERY_PUMP_1_ON_OF::bPresVal%/s%"
                 },
                 "compare2": {
                   "objectType": "StaticValue",
