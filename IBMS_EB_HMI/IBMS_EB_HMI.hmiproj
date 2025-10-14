@@ -197,6 +197,39 @@
     <Content Include=".eslintrc.json">
       <Visible>false</Visible>
     </Content>
+    <Content Include="Images\Asset\ahu lobby.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\ahu1_2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\B1_transparent.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\B2_transparent.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\B3_transparent.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\B4_transparent.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\B5_transparent.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\chiller.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\clean water.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\fan-2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\fan.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\Asset\FloorPlan11_12.png">
       <SubType>Content</SubType>
     </Content>
@@ -278,6 +311,15 @@
     <Content Include="Images\Asset\The_Energy_Logo.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\ahu lobby-0.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\ahu lobby.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\ahu1_2.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\B1_transparent.png">
       <SubType>Content</SubType>
     </Content>
@@ -296,7 +338,13 @@
     <Content Include="Imports\Images\chiller.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\clean water.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\fan-2-0.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\fan-2.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\FloorPlanMZ.png">
@@ -312,6 +360,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\ventilation-active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\ventilation-pressed.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\AirConditioner.content">
