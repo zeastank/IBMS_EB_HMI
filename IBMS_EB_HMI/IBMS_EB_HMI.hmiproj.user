@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TcHmiEditor_SelectBindingWindowDimension>316;96;958;672</TcHmiEditor_SelectBindingWindowDimension>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>[
-  280.0,
+  293.0,
   50.0,
   180.0,
   80.0,
@@ -78,7 +78,7 @@
       "Orientation": "Horizontal",
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
-      "SplitPercentage": 1.0036122817579771
+      "SplitPercentage": 0.5
     },
     {
       "Path": "Pages\\AirConditioner\\Floor51.content",
@@ -459,7 +459,16 @@
       "SplitPercentage": 0.5
     },
     {
-      "Path": "Pages\\AirConditioner\\Floor10.content",
+      "Path": "Pages\\Azbil\\AHULobby.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\AHU1.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
@@ -470,26 +479,6 @@
   ]
 }</TcHmiEditor_SplitAreaStates>
     <RecentColors>[
-  {
-    "counter": 0,
-    "color": "#FF8FC5B9"
-  },
-  {
-    "counter": 0,
-    "color": "#FF9CCCC1"
-  },
-  {
-    "counter": 0,
-    "color": "#FFADD6CD"
-  },
-  {
-    "counter": 0,
-    "color": "#FFBDE8DF"
-  },
-  {
-    "counter": 0,
-    "color": "#FF9DF1DF"
-  },
   {
     "counter": 0,
     "color": "#FFEAE216"
@@ -549,6 +538,26 @@
   {
     "counter": 0,
     "color": "#FFE32D2D"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF11C1C"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF31A1A"
+  },
+  {
+    "counter": 0,
+    "color": "#FFEF2323"
+  },
+  {
+    "counter": 0,
+    "color": "#FF000000"
+  },
+  {
+    "counter": 0,
+    "color": ""
   }
 ]</RecentColors>
   </PropertyGroup>
