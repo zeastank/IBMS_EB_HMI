@@ -11023,7 +11023,7 @@ Water Tank 3" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="10
 }
 </script>
         </div>
-        <div id="TcHmiTextblock_2294" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="179" data-tchmi-left-unit="px" data-tchmi-text="  67.8" data-tchmi-top="56" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="20" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Left">
+        <div id="TcHmiTextblock_2294" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="179" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::DAILY_TANK::fPresVal%/s%.toFixed(1) + &quot; %&quot;%/f%" data-tchmi-top="56" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="20" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
             <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
                 {
                 "color": "rgba(237, 248, 47, 1)"
@@ -11074,58 +11074,6 @@ Water Tank 3" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="10
                 "right": "Solid",
                 "top": "Solid",
                 "bottom": "Solid"
-                }
-            </script>
-        </div>
-        <div id="TcHmiTextblock_2295" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="260" data-tchmi-left-unit="px" data-tchmi-text="%" data-tchmi-top="56" data-tchmi-top-unit="px" data-tchmi-width="27" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="20" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
-            <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-                {
-                "color": "rgba(255, 255, 255, 1)"
-                }
-            </script>
-
-            <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0,
-                "leftUnit": "px",
-                "rightUnit": "px",
-                "topUnit": "px",
-                "bottomUnit": "px"
-                }
-            </script>
-
-
-
-
-
-            <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-                {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0,
-                "leftUnit": "px",
-                "rightUnit": "px",
-                "topUnit": "px",
-                "bottomUnit": "px"
-                }
-            </script>
-
-            <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
-                {
-                "left": "None",
-                "right": "None",
-                "top": "None",
-                "bottom": "None"
-                }
-            </script>
-
-            <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-                {
-                "color": "None"
                 }
             </script>
         </div>
@@ -11136,7 +11084,7 @@ Water Tank 3" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="10
 }
 </script>
         </div>
-        <div id="TcHmiTextblock_2297" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="px" data-tchmi-text="  53.5" data-tchmi-top="162" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="20" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Left">
+        <div id="TcHmiTextblock_2297" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::STORAGE_ABC::fPresVal%/s%.toFixed(1)  + &quot; %&quot;%/f%" data-tchmi-top="162" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="20" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
             <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
                 {
                 "color": "rgba(237, 248, 47, 1)"
@@ -11187,58 +11135,6 @@ Water Tank 3" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="10
                 "right": "Solid",
                 "top": "Solid",
                 "bottom": "Solid"
-                }
-            </script>
-        </div>
-        <div id="TcHmiTextblock_2298" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="107" data-tchmi-left-unit="px" data-tchmi-text="%" data-tchmi-top="162" data-tchmi-top-unit="px" data-tchmi-width="27" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="20" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
-            <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-                {
-                "color": "rgba(255, 255, 255, 1)"
-                }
-            </script>
-
-            <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0,
-                "leftUnit": "px",
-                "rightUnit": "px",
-                "topUnit": "px",
-                "bottomUnit": "px"
-                }
-            </script>
-
-
-
-
-
-            <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-                {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0,
-                "leftUnit": "px",
-                "rightUnit": "px",
-                "topUnit": "px",
-                "bottomUnit": "px"
-                }
-            </script>
-
-            <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
-                {
-                "left": "None",
-                "right": "None",
-                "top": "None",
-                "bottom": "None"
-                }
-            </script>
-
-            <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-                {
-                "color": "None"
                 }
             </script>
         </div>
@@ -11249,7 +11145,7 @@ Water Tank 3" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="10
 }
 </script>
         </div>
-<div id="TcHmiTextblock_2612" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="179" data-tchmi-left-unit="px" data-tchmi-text="  53.5" data-tchmi-top="162" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="20" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Left">
+<div id="TcHmiTextblock_2612" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="179" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::STORAGE_DEF::fPresVal%/s%.toFixed(1)  + &quot; %&quot;%/f%" data-tchmi-top="162" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="20" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
                 {
                 "color": "rgba(237, 248, 47, 1)"
@@ -11300,58 +11196,6 @@ Water Tank 3" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="10
                 "right": "Solid",
                 "top": "Solid",
                 "bottom": "Solid"
-                }
-            </script>
-        </div>
-<div id="TcHmiTextblock_2613" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="259" data-tchmi-left-unit="px" data-tchmi-text="%" data-tchmi-top="162" data-tchmi-top-unit="px" data-tchmi-width="27" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-font-size="20" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-                {
-                "color": "rgba(255, 255, 255, 1)"
-                }
-            </script>
-
-            <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0,
-                "leftUnit": "px",
-                "rightUnit": "px",
-                "topUnit": "px",
-                "bottomUnit": "px"
-                }
-            </script>
-
-
-
-
-
-            <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-                {
-                "left": 0,
-                "right": 0,
-                "top": 0,
-                "bottom": 0,
-                "leftUnit": "px",
-                "rightUnit": "px",
-                "topUnit": "px",
-                "bottomUnit": "px"
-                }
-            </script>
-
-            <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
-                {
-                "left": "None",
-                "right": "None",
-                "top": "None",
-                "bottom": "None"
-                }
-            </script>
-
-            <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-                {
-                "color": "None"
                 }
             </script>
         </div>
@@ -11412,7 +11256,7 @@ Water Tank 3" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="10
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3106::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3139::BackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",
@@ -11423,7 +11267,7 @@ Water Tank 3" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="10
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3106::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3139::Text%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/String",
@@ -11438,7 +11282,7 @@ Water Tank 3" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="10
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3106::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3139::BackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",
@@ -11449,7 +11293,7 @@ Water Tank 3" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="10
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3106::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3139::Text%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/String",
