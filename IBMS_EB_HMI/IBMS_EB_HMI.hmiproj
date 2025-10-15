@@ -116,6 +116,7 @@
   <ItemGroup>
     <Folder Include="Fonts\" />
     <Folder Include="Images" />
+    <Folder Include="Images\Asset\icon" />
     <Folder Include="Images\Manifest" />
     <Folder Include="Images\Asset" />
     <Folder Include="Images\PLC\" />
@@ -297,6 +298,33 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\Asset\FloorPlanPH3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\AC_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\ahu-icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\chiller-icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\clean_water_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\electricity_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\fire_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\fire_pump_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\power_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\solar_tank_icon.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\Asset\Image IBMS-number.png">
