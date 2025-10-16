@@ -10280,90 +10280,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
 </script>
 </div>
         <div id="TcHmiTextblock_3326" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="20" data-tchmi-height-unit="px" data-tchmi-left="130" data-tchmi-left-unit="px" data-tchmi-top="26" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="12" data-tchmi-zindex="1" data-tchmi-right="0">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_1_ST::bPresVal%/s%",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "parts": [
-          {
-            "if": [
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_1_ST::bPresVal%/s%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
-                },
-                "compareOperator": "==",
-                "logic": null
-              }
-            ],
-            "then": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::BackgroundColor%/ctrl%",
-                "value": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%tr%StatusOn%/tr%"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::Text%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "ON"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::BackgroundColor%/ctrl%",
-                "value": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%tr%StatusError%/tr%"
-                },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::Text%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "OFF"
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
+
   
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
@@ -10386,12 +10303,13 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
   "bottom": "Solid"
 }
 </script>
-</div>
-<div id="TcHmiTextblock_3327" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="20" data-tchmi-height-unit="px" data-tchmi-left="130" data-tchmi-left-unit="px" data-tchmi-top="47" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="12" data-tchmi-zindex="1" data-tchmi-right="0">
+
+
+
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_1_ST::bPresVal%/s%",
+    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::CH_1_SS::bPresVal%/s%",
     "actions": [
       {
         "objectType": "Condition",
@@ -10403,7 +10321,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
                 "compare1": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/BOOL",
-                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_1_ST::bPresVal%/s%"
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::CH_1_SS::bPresVal%/s%"
                 },
                 "compare2": {
                   "objectType": "StaticValue",
@@ -10418,7 +10336,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3326::BackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10429,7 +10347,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3326::Text%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10444,7 +10362,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3326::BackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10455,7 +10373,93 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3326::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "OFF"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_3327" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="20" data-tchmi-height-unit="px" data-tchmi-left="130" data-tchmi-left-unit="px" data-tchmi-top="47" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="12" data-tchmi-zindex="1" data-tchmi-right="0">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::CH_2_SS::bPresVal%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::CH_2_SS::bPresVal%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_3327::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%StatusOn%/tr%"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_3327::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "ON"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_3327::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_3327::Text%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10499,7 +10503,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_1_ST::bPresVal%/s%",
+    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::CH_3_SS::bPresVal%/s%",
     "actions": [
       {
         "objectType": "Condition",
@@ -10511,7 +10515,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
                 "compare1": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/BOOL",
-                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_1_ST::bPresVal%/s%"
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::CH_3_SS::bPresVal%/s%"
                 },
                 "compare2": {
                   "objectType": "StaticValue",
@@ -10526,7 +10530,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3328::BackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10537,7 +10541,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3328::Text%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10552,7 +10556,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3328::BackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10563,7 +10567,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_3322::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3328::Text%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10607,7 +10611,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_1_ST::bPresVal%/s%",
+    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::CH_4_SS::bPresVal%/s%",
     "actions": [
       {
         "objectType": "Condition",
@@ -10619,7 +10623,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
                 "compare1": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/BOOL",
-                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_1_ST::bPresVal%/s%"
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::CH_4_SS::bPresVal%/s%"
                 },
                 "compare2": {
                   "objectType": "StaticValue",
@@ -10634,7 +10638,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_2434::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3329::BackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10645,7 +10649,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_2434::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3329::Text%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10660,7 +10664,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_2434::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3329::BackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",
@@ -10671,7 +10675,7 @@ SYSTEM" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="55" data-
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_2434::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_3329::Text%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/String",
