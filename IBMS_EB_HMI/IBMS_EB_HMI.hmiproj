@@ -303,13 +303,43 @@
     <Content Include="Images\Asset\icon\AC_icon.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Images\Asset\icon\AC_icon2_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\AC_icon2_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\AC_icon2_white.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\Asset\icon\ahu-icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\ahu-icon2_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\ahu-icon2_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\ahu-icon2_white.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\Asset\icon\chiller-icon.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Images\Asset\icon\chiller-icon2_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\chiller-icon2_white.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\Asset\icon\clean_water_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\clean_water_icon2_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\clean_water_icon2_blue.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\Asset\icon\electricity_icon.png">
@@ -327,6 +357,21 @@
     <Content Include="Images\Asset\icon\solar_tank_icon.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Images\Asset\icon\solar_tank_icon_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\solar_tank_icon_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\sump_pump_icon_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\sump_pump_icon_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Asset\icon\sump_pump_icon_white.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\Asset\Image IBMS-number.png">
       <SubType>Content</SubType>
     </Content>
@@ -339,10 +384,34 @@
     <Content Include="Images\Asset\The_Energy_Logo.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\AC_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\AC_icon2_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\AC_icon2_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\AC_icon2_white.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\ahu lobby-0.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\ahu lobby.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\ahu-icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\ahu-icon2_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\ahu-icon2_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\ahu-icon2_white.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\ahu1_2.png">
@@ -363,16 +432,43 @@
     <Content Include="Imports\Images\B5_transparent.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\chiller-icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\chiller-icon2_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\chiller-icon2_white.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\chiller.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\clean water.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\clean_water_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\clean_water_icon2_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\clean_water_icon2_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\electricity_icon.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\fan-2-0.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\fan-2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\fire_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\fire_pump_icon.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\FloorPlanMZ.png">
@@ -384,13 +480,88 @@
     <Content Include="Imports\Images\FloorPlanPH1.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\hmi-main-active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\hmi-main-normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\hmi-main-pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_cooling_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_cooling_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_cooling_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_fire-protection_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_fire-protection_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_fire-protection_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\icons_right_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\power_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\solar_tank_icon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\solar_tank_icon_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\solar_tank_icon_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\sump_pump_icon_black.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\sump_pump_icon_blue.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\sump_pump_icon_white.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\temperature-active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\temperature-normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\temperature-pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\ventilation-active %281%29.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\ventilation-active.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\ventilation-normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\ventilation-pressed %281%29.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\ventilation-pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\water-valve_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\water-valve_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\water-valve_pressed.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\AirConditioner.content">
@@ -3598,9 +3769,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Azbil\CleanWater.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Azbil\FirePump - Copy.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Azbil\FirePump.content">
