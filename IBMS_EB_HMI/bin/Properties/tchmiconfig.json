@@ -7538,13 +7538,6 @@
       "preloadBindings": false
     },
     {
-      "url": "Pages/Azbil/FirePump - Copy.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
       "url": "Pages/Azbil/FirePump.content",
       "preload": false,
       "keepAlive": false,
@@ -8808,54 +8801,6 @@
       }
     },
     "themedResources": {
-      "TR_Icon_Dashboard_normal": {
-        "type": "tchmi:framework#/definitions/Path",
-        "description": "Normal Icon of page: Dashboard",
-        "values": {
-          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
-        }
-      },
-      "TR_Icon_Dashboard_pressed": {
-        "type": "tchmi:framework#/definitions/Path",
-        "description": "Pressed Icon of page: Dashboard",
-        "values": {
-          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
-        }
-      },
-      "TR_Icon_Dashboard_active": {
-        "type": "tchmi:framework#/definitions/Path",
-        "description": "Active Icon of page: Dashboard",
-        "values": {
-          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
-        }
-      },
-      "TR_Icon_AirConditioner_normal": {
-        "type": "tchmi:framework#/definitions/Path",
-        "description": "Normal Icon of page: Air Conditioner",
-        "values": {
-          "Base": "Themes/Base/Images/Placeholder/placeholder_normal.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_normal.svg"
-        }
-      },
-      "TR_Icon_AirConditioner_pressed": {
-        "type": "tchmi:framework#/definitions/Path",
-        "description": "Pressed Icon of page: Air Conditioner",
-        "values": {
-          "Base": "Themes/Base/Images/Placeholder/placeholder_pressed.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_pressed.svg"
-        }
-      },
-      "TR_Icon_AirConditioner_active": {
-        "type": "tchmi:framework#/definitions/Path",
-        "description": "Active Icon of page: Air Conditioner",
-        "values": {
-          "Base": "Themes/Base/Images/Placeholder/placeholder_active.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Placeholder/placeholder_active.svg"
-        }
-      },
       "TR_Icon_Events_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "Normal Icon of page: Events",
@@ -8970,6 +8915,222 @@
           "Base-Dark": {
             "color": "rgba(173, 169, 169, 0.3921568)"
           }
+        }
+      },
+      "TR_Icon_EF_IF_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Imports/Images/ventilation-active.svg",
+          "Base-Dark": "Imports/Images/ventilation-active.svg"
+        }
+      },
+      "TR_Icon_EF_IF_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Imports/Images/ventilation-normal.svg",
+          "Base-Dark": "Imports/Images/ventilation-normal.svg"
+        }
+      },
+      "TR_Icon_EF_IF_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Imports/Images/ventilation-pressed.svg",
+          "Base-Dark": "Imports/Images/ventilation-pressed.svg"
+        }
+      },
+      "TR_Icon_Dashboard_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Imports/Images/hmi-main-normal.svg",
+          "Base-Dark": "Imports/Images/hmi-main-normal.svg"
+        }
+      },
+      "TR_Icon_Dashboard_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Imports/Images/hmi-main-pressed.svg",
+          "Base-Dark": "Imports/Images/hmi-main-pressed.svg"
+        }
+      },
+      "TR_Icon_Dashboard_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Imports/Images/hmi-main-active.svg",
+          "Base-Dark": "Imports/Images/hmi-main-active.svg"
+        }
+      },
+      "TR_Icon_Fire_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Imports/Images/icons_fire-protection_normal.svg",
+          "Base-Dark": "Imports/Images/icons_fire-protection_normal.svg"
+        }
+      },
+      "TR_Icon_Fire_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Imports/Images/icons_fire-protection_pressed.svg",
+          "Base-Dark": "Imports/Images/icons_fire-protection_pressed.svg"
+        }
+      },
+      "TR_Icon_Fire_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Imports/Images/icons_fire-protection_active.svg",
+          "Base-Dark": "Imports/Images/icons_fire-protection_active.svg"
+        }
+      },
+      "TR_Icon_CleanWater_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/clean_water_icon2_blue.png",
+          "Base-Dark": "Images/Asset/icon/clean_water_icon2_blue.png"
+        }
+      },
+      "TR_Icon_CleanWater_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/clean_water_icon.png",
+          "Base-Dark": "Images/Asset/icon/clean_water_icon.png"
+        }
+      },
+      "TR_Icon_CleanWater_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/clean_water_icon2_black.png",
+          "Base-Dark": "Images/Asset/icon/clean_water_icon2_black.png"
+        }
+      },
+      "TR_Icon_Chiller_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/chiller-icon2_blue.png",
+          "Base-Dark": "Images/Asset/icon/chiller-icon2_blue.png"
+        }
+      },
+      "TR_Icon_Chiller_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/chiller-icon.png",
+          "Base-Dark": "Images/Asset/icon/chiller-icon.png"
+        }
+      },
+      "TR_Icon_Chiller_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/chiller-icon2_white.png",
+          "Base-Dark": "Images/Asset/icon/chiller-icon2_white.png"
+        }
+      },
+      "TR_Icon_AHU_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/ahu-icon2_white.png",
+          "Base-Dark": "Images/Asset/icon/ahu-icon2_white.png"
+        }
+      },
+      "TR_Icon_AHU_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/ahu-icon2_blue.png",
+          "Base-Dark": "Images/Asset/icon/ahu-icon2_blue.png"
+        }
+      },
+      "TR_Icon_AHU_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/ahu-icon2_black.png",
+          "Base-Dark": "Images/Asset/icon/ahu-icon2_black.png"
+        }
+      },
+      "TR_Icon_AirConditioner_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/AC_icon2_white.png",
+          "Base-Dark": "Images/Asset/icon/AC_icon2_white.png"
+        }
+      },
+      "TR_Icon_AirConditioner_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/AC_icon2_blue.png",
+          "Base-Dark": "Images/Asset/icon/AC_icon2_blue.png"
+        }
+      },
+      "TR_Icon_AirConditioner_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/AC_icon2_black.png",
+          "Base-Dark": "Images/Asset/icon/AC_icon2_black.png"
+        }
+      },
+      "TR_Icon_Solar_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/solar_tank_icon.png",
+          "Base-Dark": "Images/Asset/icon/solar_tank_icon.png"
+        }
+      },
+      "TR_Icon_Solar_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/solar_tank_icon_blue.png",
+          "Base-Dark": "Images/Asset/icon/solar_tank_icon_blue.png"
+        }
+      },
+      "TR_Icon_Solar_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/solar_tank_icon_black.png",
+          "Base-Dark": "Images/Asset/icon/solar_tank_icon_black.png"
+        }
+      },
+      "TR_Icon_pump_active": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/sump_pump_icon_white.png",
+          "Base-Dark": "Images/Asset/icon/sump_pump_icon_white.png"
+        }
+      },
+      "TR_Icon_pump_normal": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/sump_pump_icon_blue.png",
+          "Base-Dark": "Images/Asset/icon/sump_pump_icon_blue.png"
+        }
+      },
+      "TR_Icon_pump_pressed": {
+        "type": "tchmi:framework#/definitions/Path",
+        "description": "",
+        "values": {
+          "Base": "Images/Asset/icon/sump_pump_icon_black.png",
+          "Base-Dark": "Images/Asset/icon/sump_pump_icon_black.png"
         }
       }
     }

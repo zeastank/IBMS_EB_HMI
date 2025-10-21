@@ -67,7 +67,9 @@
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlTypeAttributesTree>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_ThemedResourceTree>[
   254.0,
-  300.0
+  300.0,
+  100.0,
+  100.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ThemedResourceTree>
     <TcHmiEditor_SplitAreaStates>{
   "EditorSettings": [
@@ -460,6 +462,15 @@
     },
     {
       "Path": "Pages\\AirConditioner.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\AirConditioner\\Floor32\\Floor32_A1.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
