@@ -15843,22 +15843,6 @@ Trip" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" dat
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "TcHmiGrid_9.onMouseClick",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%Region_Center::TargetContent%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/Azbil/FirePump.content"
-        },
-        "asyncWait": true
-      }
-    ]
-  },
-  {
     "event": "TcHmiGrid_9.onMouseOver",
     "actions": [
       {
@@ -15921,6 +15905,22 @@ Trip" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" dat
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/BorderWidth",
           "value": null
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "TcHmiGrid_9.onMouseClick",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Region_Center::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "Pages/Azbil/FirePump.content"
         },
         "asyncWait": true
       }
