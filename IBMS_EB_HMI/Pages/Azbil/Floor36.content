@@ -464,7 +464,7 @@
                           {
                             "objectType": "WriteToSymbol",
                             "active": true,
-                            "symbolExpression": "%ctrl%TcHmiTextblock_2149::BackgroundColor%/ctrl%",
+                            "symbolExpression": "%ctrl%TcHmiTextblock_2203::BackgroundColor%/ctrl%",
                             "value": {
                               "objectType": "Symbol",
                               "valueType": "tchmi:general#/definitions/String",
@@ -475,7 +475,7 @@
                           {
                             "objectType": "WriteToSymbol",
                             "active": true,
-                            "symbolExpression": "%ctrl%TcHmiTextblock_2149::Text%/ctrl%",
+                            "symbolExpression": "%ctrl%TcHmiTextblock_2203::Text%/ctrl%",
                             "value": {
                               "objectType": "StaticValue",
                               "valueType": "tchmi:general#/definitions/String",
@@ -490,7 +490,7 @@
                           {
                             "objectType": "WriteToSymbol",
                             "active": true,
-                            "symbolExpression": "%ctrl%TcHmiTextblock_2149::BackgroundColor%/ctrl%",
+                            "symbolExpression": "%ctrl%TcHmiTextblock_2203::BackgroundColor%/ctrl%",
                             "value": {
                               "objectType": "Symbol",
                               "valueType": "tchmi:general#/definitions/String",
@@ -501,7 +501,7 @@
                           {
                             "objectType": "WriteToSymbol",
                             "active": true,
-                            "symbolExpression": "%ctrl%TcHmiTextblock_2149::Text%/ctrl%",
+                            "symbolExpression": "%ctrl%TcHmiTextblock_2203::Text%/ctrl%",
                             "value": {
                               "objectType": "StaticValue",
                               "valueType": "tchmi:general#/definitions/String",
