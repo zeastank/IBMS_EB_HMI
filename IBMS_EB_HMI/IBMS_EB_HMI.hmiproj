@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>IBMS_EB_HMI</Name>
-    <HmiCommunicationRouterPort>10103</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10104</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.762.46</HmiInitial>
     <HmiRecent>1.12.762.46</HmiRecent>
@@ -3757,6 +3757,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\AirConditioner\Scheduler\Power_Control.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\AHUNav.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Azbil\ExhaustNav.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Azbil\AHU1.content">
