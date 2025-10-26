@@ -7,7 +7,7 @@
       ]
     </script>
   </div>
-  <div id="TcHmiContainer_Events_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-top="64" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="16" data-tchmi-bottom="16">
+  <div id="TcHmiContainer_Events_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="%" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-top="64" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="16" data-tchmi-height="47">
 
     <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
       [
@@ -15,7 +15,7 @@
       ]
     </script>
 
-    <div id="TcHmiEventGrid_Events_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEventGrid" data-tchmi-height-unit="px" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-show-menu-bar="True" data-tchmi-top="16" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="16" data-tchmi-bottom="16">
+    <div id="TcHmiEventGrid_Events_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEventGrid" data-tchmi-height-unit="%" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-show-menu-bar="True" data-tchmi-top="20" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="20" data-tchmi-bottom="20">
       <script data-tchmi-target-attribute="data-tchmi-filter" type="application/json">
         []
       </script>
@@ -54,4 +54,28 @@
       </script>
     </div>
   </div>
+<div id="TcHmiFileExplorer_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiFileExplorer" data-tchmi-height="400" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="48" data-tchmi-width-unit="%" data-tchmi-root="/Logs" data-tchmi-bottom="20">
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "delete",
+    "group": "Administrator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "rename",
+    "group": "Administrator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "create",
+    "group": "Administrator",
+    "permission": "Deny"
+  }
+]
+</script>
+</div>
 </div>

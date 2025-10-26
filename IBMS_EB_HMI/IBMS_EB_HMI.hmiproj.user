@@ -484,6 +484,24 @@
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
       "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\LogReader.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\AirConditioner\\AC_Scheduler.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
     }
   ]
 }</TcHmiEditor_SplitAreaStates>
@@ -569,5 +587,6 @@
     "color": "#FFAF6C6C"
   }
 ]</RecentColors>
+    <TcHmiEditor_PermissionsWindowDimension>208;208;1000;700</TcHmiEditor_PermissionsWindowDimension>
   </PropertyGroup>
 </Project>
