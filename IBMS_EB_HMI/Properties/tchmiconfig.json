@@ -52,7 +52,11 @@
       "type": "Stylesheet"
     }
   ],
-  "userControls": [],
+  "userControls": [
+    {
+      "url": "UserControl/AhuControl.usercontrol"
+    }
+  ],
   "content": [
     {
       "url": "Pages/AirConditioner.content",
@@ -9152,6 +9156,16 @@
         "values": {
           "Base": "Images/Asset/icon/sump_pump_icon_black.png",
           "Base-Dark": "Images/Asset/icon/sump_pump_icon_black.png"
+        }
+      },
+      "text_black": {
+        "type": "tchmi:framework#/definitions/Color",
+        "description": "",
+        "values": {
+          "Base": {
+            "color": "rgba(0, 0, 0, 1)"
+          },
+          "Base-Dark": null
         }
       }
     }

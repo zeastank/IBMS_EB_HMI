@@ -502,10 +502,27 @@
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
       "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\AirConditioner\\Floor10\\Floor10_A1.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
     }
   ]
 }</TcHmiEditor_SplitAreaStates>
     <RecentColors>[
+  {
+    "counter": 0,
+    "color": "#FF000000"
+  },
+  {
+    "counter": 0,
+    "color": "#FF251F1F"
+  },
   {
     "counter": 0,
     "color": "#FFEAE216"
@@ -577,14 +594,6 @@
   {
     "counter": 0,
     "color": "#FFEF2323"
-  },
-  {
-    "counter": 0,
-    "color": "#FF000000"
-  },
-  {
-    "counter": 0,
-    "color": ""
   }
 ]</RecentColors>
   </PropertyGroup>
