@@ -8823,6 +8823,78 @@
         "type": "tchmi:general#/definitions/BOOL",
         "persist": false,
         "readonly": false
+      },
+      "AHU_2_SP_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_2_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_2_MV_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_2_TEDS_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_1_SP_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_1_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_1_MV_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_1_TEDS_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_LOBBY_SP_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_LOBBY_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": false,
+        "readonly": false
+      },
+      "AHU_LOBBY_MV_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_LOBBY_TEDS_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
       }
     },
     "themedResources": {
