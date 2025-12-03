@@ -2109,4 +2109,14 @@
 ]
 </script>
 </div>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "observe",
+    "group": "Monitor",
+    "permission": "Deny"
+  }
+]
+</script>
 </div>;

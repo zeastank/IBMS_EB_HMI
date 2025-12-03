@@ -164314,9 +164314,9 @@
     "UPLOADTIMEOUT": "PT20S",
     "USEINT64STRING": false,
     "USERGROUPS": {
-        "Administrator": {
+        "Monitor": {
             "ENABLED": true,
-            "FILEACCESS": 3,
+            "FILEACCESS": 1,
             "FILES": {},
             "SYMBOLACCESS": 0,
             "SYMBOLS": {
@@ -165961,11 +165961,11 @@
     },
     "USERGROUPUSERS": {
         "TcHmiUserManagement": {
-            "Administrator": {
+            "Monitor": {
                 "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
                 "USERGROUPUSERS_GROUPS": [
                     "__SystemUsers",
-                    "Administrator"
+                    "Monitor"
                 ],
                 "USERGROUPUSERS_LOCALE": "client",
                 "USERGROUPUSERS_TIMEFORMATLOCALE": "project",

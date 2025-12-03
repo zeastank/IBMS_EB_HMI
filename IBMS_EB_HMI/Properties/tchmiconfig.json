@@ -8819,6 +8819,14 @@
         "type": "tchmi:general#/definitions/BOOL",
         "persist": false,
         "readonly": false
+      },
+      "User_Group": {
+        "value": [
+          "Frontdesk"
+        ],
+        "type": "tchmi:server#/definitions/userGroups",
+        "persist": false,
+        "readonly": false
       }
     },
     "themedResources": {

@@ -30,7 +30,7 @@
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_extensionLocalizationsTree>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlsTree>[
   300.0,
-  300.0
+  327.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlsTree>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolActionTemplateParametersTree>[
   200.0,
@@ -78,7 +78,7 @@
       "Orientation": "Horizontal",
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
-      "SplitPercentage": 0.5
+      "SplitPercentage": 0.624468085106383
     },
     {
       "Path": "Pages\\AirConditioner\\Floor51.content",
@@ -496,6 +496,15 @@
     },
     {
       "Path": "Pages\\AirConditioner\\AC_Scheduler.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\AHU1.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
