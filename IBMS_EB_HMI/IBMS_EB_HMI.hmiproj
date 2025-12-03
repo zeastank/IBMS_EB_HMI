@@ -114,6 +114,13 @@
   <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <ItemGroup>
+    <Content Include="UserControl\AhuControl.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControl\AhuControl.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControl\AhuControl.usercontrol</DependentUpon>
+    </Content>
     <Folder Include="Fonts\" />
     <Folder Include="Images" />
     <Folder Include="Images\Asset\icon" />
@@ -126,6 +133,7 @@
     <Folder Include="Imports\Videos" />
     <Folder Include="KeyboardLayouts\" />
     <Folder Include="Localization" />
+    <Folder Include="UserControl" />
     <Folder Include="Pages\" />
     <Folder Include="Pages\AirConditioner" />
     <Folder Include="Pages\AirConditioner\Floor5" />

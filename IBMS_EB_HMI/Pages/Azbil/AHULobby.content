@@ -1,45 +1,608 @@
-<div id="AHU2_2" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-zindex="9">
-<div id="TcHmiRectangle_1146" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="27" data-tchmi-height-unit="px" data-tchmi-left="289" data-tchmi-left-unit="px" data-tchmi-top="315" data-tchmi-top-unit="px" data-tchmi-width="95" data-tchmi-width-unit="px" data-tchmi-zindex="7">
-</div>
-<div id="TcHmiTextblock_2436" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22" data-tchmi-height-unit="px" data-tchmi-left="306" data-tchmi-left-unit="px" data-tchmi-text="TEDR" data-tchmi-top="293" data-tchmi-top-unit="px" data-tchmi-width="62" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="9">
-
-
-</div>
-<div id="TcHmiRectangle_1147" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="27" data-tchmi-height-unit="px" data-tchmi-left="289" data-tchmi-left-unit="px" data-tchmi-top="266" data-tchmi-top-unit="px" data-tchmi-width="95" data-tchmi-width-unit="px" data-tchmi-zindex="5">
-</div>
-<div id="TcHmiTextblock_2437" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22" data-tchmi-height-unit="px" data-tchmi-left="306" data-tchmi-left-unit="px" data-tchmi-text="SP.TEDR" data-tchmi-top="244" data-tchmi-top-unit="px" data-tchmi-width="62" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiTextblock_2438" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22" data-tchmi-height-unit="px" data-tchmi-left="289" data-tchmi-left-unit="px" data-tchmi-text="PV :" data-tchmi-top="318" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiTextblock_2439" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22" data-tchmi-height-unit="px" data-tchmi-left="287" data-tchmi-left-unit="px" data-tchmi-text="SP :" data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiRectangle_1148" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="27" data-tchmi-height-unit="px" data-tchmi-left="733" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="95" data-tchmi-width-unit="px" data-tchmi-zindex="3">
-</div>
-<div id="TcHmiTextblock_2440" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="745" data-tchmi-left-unit="px" data-tchmi-text="MV AHU-1" data-tchmi-top="124" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiTextblock_2441" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22" data-tchmi-height-unit="px" data-tchmi-left="733" data-tchmi-left-unit="px" data-tchmi-text="MV :" data-tchmi-top="158" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiTextblock_2442" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="557" data-tchmi-left-unit="px" data-tchmi-text="FILTER ALM" data-tchmi-top="213" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiTextblock_2443" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="848" data-tchmi-left-unit="px" data-tchmi-text="CHWR" data-tchmi-top="209" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiTextblock_2444" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="848" data-tchmi-left-unit="px" data-tchmi-text="CHWS" data-tchmi-top="261" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiTextblock_2445" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="1041" data-tchmi-left-unit="px" data-tchmi-text="AFS" data-tchmi-top="283" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiTextblock_2446" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="55" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="RETURN AIR" data-tchmi-top="374" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiTextblock_2447" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="1348" data-tchmi-left-unit="px" data-tchmi-text="SUPPLY AIR" data-tchmi-top="374" data-tchmi-top-unit="px" data-tchmi-width="68" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiRectangle_1149" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="27" data-tchmi-height-unit="px" data-tchmi-left="1140" data-tchmi-left-unit="px" data-tchmi-top="306" data-tchmi-top-unit="px" data-tchmi-width="95" data-tchmi-width-unit="px" data-tchmi-zindex="2">
-</div>
-<div id="TcHmiTextblock_2448" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="1151" data-tchmi-left-unit="px" data-tchmi-text="TEDS" data-tchmi-top="275" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiTextblock_2449" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22" data-tchmi-height-unit="px" data-tchmi-left="1138" data-tchmi-left-unit="px" data-tchmi-text="PV :" data-tchmi-top="308" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="9">
-</div>
-<div id="TcHmiEllipse_13" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="1068" data-tchmi-left-unit="px" data-tchmi-top="318" data-tchmi-top-unit="px" data-tchmi-width="32" data-tchmi-width-unit="px" data-tchmi-zindex="8">
-
+<div id="AHU2_2" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0"
+  data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-zindex="9">
+  <div id="TcHmiRectangle_1146" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="27"
+    data-tchmi-height-unit="px" data-tchmi-left="289" data-tchmi-left-unit="px" data-tchmi-top="315"
+    data-tchmi-top-unit="px" data-tchmi-width="95" data-tchmi-width-unit="px" data-tchmi-zindex="7">
+  
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%AHU_LOBBY_TEDR_SP%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::RET_TEMP_AHU_LOBBY::fPresVal%/s%"
+                },
+                "compare2": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%AHU_LOBBY_TEDR_SP%/i%"
+                },
+                "compareOperator": "<",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1146::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1146::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::RET_TEMP_AHU_LOBBY::fPresVal%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::RET_TEMP_AHU_LOBBY::fPresVal%/s%"
+                },
+                "compare2": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%AHU_LOBBY_TEDR_SP%/i%"
+                },
+                "compareOperator": "<",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1146::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1146::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+  <div id="TcHmiTextblock_2436" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22"
+    data-tchmi-height-unit="px" data-tchmi-left="306" data-tchmi-left-unit="px" data-tchmi-text="TEDR"
+    data-tchmi-top="293" data-tchmi-top-unit="px" data-tchmi-width="62" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-zindex="9">
+
+
+  </div>
+  <div id="TcHmiRectangle_1147" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="27"
+    data-tchmi-height-unit="px" data-tchmi-left="289" data-tchmi-left-unit="px" data-tchmi-top="266"
+    data-tchmi-top-unit="px" data-tchmi-width="95" data-tchmi-width-unit="px" data-tchmi-zindex="5">
+  
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%AHU_LOBBY_SP_TEDR_SP%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SP_RET_TEMP_AHU_LOBBY::fPresVal%/s%"
+                },
+                "compare2": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%AHU_LOBBY_SP_TEDR_SP%/i%"
+                },
+                "compareOperator": "<",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1147::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1147::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SP_RET_TEMP_AHU_LOBBY::fPresVal%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SP_RET_TEMP_AHU_LOBBY::fPresVal%/s%"
+                },
+                "compare2": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%AHU_LOBBY_SP_TEDR_SP%/i%"
+                },
+                "compareOperator": "<",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1147::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1147::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+  <div id="TcHmiTextblock_2437" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22"
+    data-tchmi-height-unit="px" data-tchmi-left="306" data-tchmi-left-unit="px" data-tchmi-text="SP.TEDR"
+    data-tchmi-top="244" data-tchmi-top-unit="px" data-tchmi-width="62" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiTextblock_2438" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22"
+    data-tchmi-height-unit="px" data-tchmi-left="289" data-tchmi-left-unit="px" data-tchmi-text="PV :"
+    data-tchmi-top="318" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiTextblock_2439" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22"
+    data-tchmi-height-unit="px" data-tchmi-left="287" data-tchmi-left-unit="px" data-tchmi-text="SP :"
+    data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiRectangle_1148" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="27"
+    data-tchmi-height-unit="px" data-tchmi-left="733" data-tchmi-left-unit="px" data-tchmi-top="155"
+    data-tchmi-top-unit="px" data-tchmi-width="95" data-tchmi-width-unit="px" data-tchmi-zindex="3">
+  
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%AHU_LOBBY_MV_SP%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::MV_AHU_LOBBY::fPresVal%/s%"
+                },
+                "compare2": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%AHU_LOBBY_MV_SP%/i%"
+                },
+                "compareOperator": "<",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1148::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1148::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::MV_AHU_LOBBY::fPresVal%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::MV_AHU_LOBBY::fPresVal%/s%"
+                },
+                "compare2": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%AHU_LOBBY_MV_SP%/i%"
+                },
+                "compareOperator": "<",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1148::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1148::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+  <div id="TcHmiTextblock_2440" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31"
+    data-tchmi-height-unit="px" data-tchmi-left="745" data-tchmi-left-unit="px" data-tchmi-text="MV AHU-1"
+    data-tchmi-top="124" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiTextblock_2441" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22"
+    data-tchmi-height-unit="px" data-tchmi-left="733" data-tchmi-left-unit="px" data-tchmi-text="MV :"
+    data-tchmi-top="158" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiTextblock_2442" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31"
+    data-tchmi-height-unit="px" data-tchmi-left="557" data-tchmi-left-unit="px" data-tchmi-text="FILTER ALM"
+    data-tchmi-top="213" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiTextblock_2443" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31"
+    data-tchmi-height-unit="px" data-tchmi-left="848" data-tchmi-left-unit="px" data-tchmi-text="CHWR"
+    data-tchmi-top="209" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiTextblock_2444" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31"
+    data-tchmi-height-unit="px" data-tchmi-left="848" data-tchmi-left-unit="px" data-tchmi-text="CHWS"
+    data-tchmi-top="261" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiTextblock_2445" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31"
+    data-tchmi-height-unit="px" data-tchmi-left="1041" data-tchmi-left-unit="px" data-tchmi-text="AFS"
+    data-tchmi-top="283" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiTextblock_2446" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="55"
+    data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="RETURN AIR"
+    data-tchmi-top="374" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiTextblock_2447" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="42"
+    data-tchmi-height-unit="px" data-tchmi-left="1348" data-tchmi-left-unit="px" data-tchmi-text="SUPPLY AIR"
+    data-tchmi-top="374" data-tchmi-top-unit="px" data-tchmi-width="68" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiRectangle_1149" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="27"
+    data-tchmi-height-unit="px" data-tchmi-left="1140" data-tchmi-left-unit="px" data-tchmi-top="306"
+    data-tchmi-top-unit="px" data-tchmi-width="95" data-tchmi-width-unit="px" data-tchmi-zindex="2">
+  
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%AHU_LOBBY_TEDS_SP%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SUPP_TEMP_AHU_LOBBY::fPresVal%/s%"
+                },
+                "compare2": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%AHU_LOBBY_TEDS_SP%/i%"
+                },
+                "compareOperator": "<",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1149::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1149::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SUPP_TEMP_AHU_LOBBY::fPresVal%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SUPP_TEMP_AHU_LOBBY::fPresVal%/s%"
+                },
+                "compare2": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%AHU_LOBBY_TEDS_SP%/i%"
+                },
+                "compareOperator": "<",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1149::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%StatusError%/tr%"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiRectangle_1149::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+  <div id="TcHmiTextblock_2448" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31"
+    data-tchmi-height-unit="px" data-tchmi-left="1151" data-tchmi-left-unit="px" data-tchmi-text="TEDS"
+    data-tchmi-top="275" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="18"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiTextblock_2449" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="22"
+    data-tchmi-height-unit="px" data-tchmi-left="1138" data-tchmi-left-unit="px" data-tchmi-text="PV :"
+    data-tchmi-top="308" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-zindex="9">
+  </div>
+  <div id="TcHmiEllipse_13" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="35"
+    data-tchmi-height-unit="px" data-tchmi-left="1068" data-tchmi-left-unit="px" data-tchmi-top="318"
+    data-tchmi-top-unit="px" data-tchmi-width="32" data-tchmi-width-unit="px" data-tchmi-zindex="8">
+
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
     "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_x_LOBBY_ST::bPresVal%/s%",
@@ -123,18 +686,40 @@
   }
 ]
 </script>
-</div>
-<div id="TcHmiTextblock_2450" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="23" data-tchmi-height-unit="px" data-tchmi-left="323" data-tchmi-left-unit="px" data-tchmi-top="318" data-tchmi-top-unit="px" data-tchmi-width="37" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::RET_TEMP_AHU_LOBBY::fPresVal%/s%.toFixed(1)%/f%" data-tchmi-zindex="8">
-</div>
-<div id="TcHmiTextblock_2451" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="24" data-tchmi-height-unit="px" data-tchmi-left="363" data-tchmi-left-unit="px" data-tchmi-text="℃" data-tchmi-top="318" data-tchmi-top-unit="px" data-tchmi-width="25" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="7">
-</div>
-<div id="TcHmiTextblock_2452" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="23" data-tchmi-height-unit="px" data-tchmi-left="322" data-tchmi-left-unit="px" data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-width="37" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SP_RET_TEMP_AHU_LOBBY::fPresVal%/s%.toFixed(1)%/f%" data-tchmi-zindex="8">
-</div>
-<div id="TcHmiTextblock_2453" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="24" data-tchmi-height-unit="px" data-tchmi-left="362" data-tchmi-left-unit="px" data-tchmi-text="℃" data-tchmi-top="268" data-tchmi-top-unit="px" data-tchmi-width="25" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="7">
-</div>
-<div id="TcHmiRectangle_1150" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="19" data-tchmi-height-unit="px" data-tchmi-left="595" data-tchmi-left-unit="px" data-tchmi-top="248" data-tchmi-top-unit="px" data-tchmi-width="21" data-tchmi-width-unit="px" data-tchmi-zindex="5">
+  </div>
+  <div id="TcHmiTextblock_2450" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="23"
+    data-tchmi-height-unit="px" data-tchmi-left="323" data-tchmi-left-unit="px" data-tchmi-top="317"
+    data-tchmi-top-unit="px" data-tchmi-width="37" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::RET_TEMP_AHU_LOBBY::fPresVal%/s%.toFixed(1)%/f%"
+    data-tchmi-zindex="8">
+  </div>
+  <div id="TcHmiTextblock_2451" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="24"
+    data-tchmi-height-unit="px" data-tchmi-left="363" data-tchmi-left-unit="px" data-tchmi-text="℃" data-tchmi-top="318"
+    data-tchmi-top-unit="px" data-tchmi-width="25" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="7">
+  </div>
+  <div id="TcHmiTextblock_2452" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="23"
+    data-tchmi-height-unit="px" data-tchmi-left="322" data-tchmi-left-unit="px" data-tchmi-top="268"
+    data-tchmi-top-unit="px" data-tchmi-width="37" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SP_RET_TEMP_AHU_LOBBY::fPresVal%/s%.toFixed(1)%/f%"
+    data-tchmi-zindex="8">
+  </div>
+  <div id="TcHmiTextblock_2453" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="24"
+    data-tchmi-height-unit="px" data-tchmi-left="362" data-tchmi-left-unit="px" data-tchmi-text="℃" data-tchmi-top="268"
+    data-tchmi-top-unit="px" data-tchmi-width="25" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="7">
+  </div>
+  <div id="TcHmiRectangle_1150" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="19"
+    data-tchmi-height-unit="px" data-tchmi-left="595" data-tchmi-left-unit="px" data-tchmi-top="248"
+    data-tchmi-top-unit="px" data-tchmi-width="21" data-tchmi-width-unit="px" data-tchmi-zindex="5">
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
     "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::DPS_AHU_LOBBY::bPresVal%/s%",
@@ -218,39 +803,99 @@
   }
 ]
 </script>
-</div>
-<div id="TcHmiTextblock_2454" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="23" data-tchmi-height-unit="px" data-tchmi-left="770" data-tchmi-left-unit="px" data-tchmi-top="157" data-tchmi-top-unit="px" data-tchmi-width="37" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::MV_AHU_LOBBY::fPresVal%/s%.toFixed(1)%/f%" data-tchmi-zindex="8">
-</div>
-<div id="TcHmiTextblock_2455" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="24" data-tchmi-height-unit="px" data-tchmi-left="810" data-tchmi-left-unit="px" data-tchmi-text="%" data-tchmi-top="157" data-tchmi-top-unit="px" data-tchmi-width="25" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="7">
-</div>
-<div id="TcHmiTextblock_2456" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="23" data-tchmi-height-unit="px" data-tchmi-left="1172" data-tchmi-left-unit="px" data-tchmi-top="308" data-tchmi-top-unit="px" data-tchmi-width="37" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SUPP_TEMP_AHU_LOBBY::fPresVal%/s%.toFixed(1)%/f%" data-tchmi-zindex="8">
-</div>
-<div id="TcHmiTextblock_2457" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="24" data-tchmi-height-unit="px" data-tchmi-left="1212" data-tchmi-left-unit="px" data-tchmi-text="℃" data-tchmi-top="308" data-tchmi-top-unit="px" data-tchmi-width="25" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="7">
-</div>
-<div id="TcHmiRectangle_1151" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-top="535" data-tchmi-top-unit="px" data-tchmi-width="190" data-tchmi-width-unit="px" data-tchmi-zindex="1">
-</div>
-<div id="TcHmiTextblock_2458" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-text="AHU-3" data-tchmi-top="535" data-tchmi-top-unit="px" data-tchmi-width="190" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="1">
-</div>
-<div id="TcHmiRectangle_1152" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-top="567" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-zindex="1">
-</div>
-<div id="TcHmiRectangle_1153" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="187" data-tchmi-left-unit="px" data-tchmi-top="567" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-zindex="1">
-</div>
-<div id="TcHmiTextblock_2459" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-text="AHU-3 ON/OFF" data-tchmi-top="567" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="14" data-tchmi-zindex="1">
-</div>
-<div id="TcHmiRectangle_1154" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="187" data-tchmi-left-unit="px" data-tchmi-top="599" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-zindex="1">
-</div>
-<div id="TcHmiRectangle_1155" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="188" data-tchmi-left-unit="px" data-tchmi-top="631" data-tchmi-top-unit="px" data-tchmi-width="99" data-tchmi-width-unit="px" data-tchmi-zindex="1">
-</div>
-<div id="TcHmiRectangle_1156" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-top="599" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-zindex="1">
-</div>
-<div id="TcHmiRectangle_1157" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-top="631" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-zindex="1">
-</div>
-<div id="TcHmiTextblock_2460" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-text="AHU-3 STATUS" data-tchmi-top="599" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="14" data-tchmi-zindex="1">
-</div>
-<div id="TcHmiTextblock_2461" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-text="AHU-3 TRIP" data-tchmi-top="631" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="14" data-tchmi-zindex="1">
-</div>
-<div id="Button_258" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="17" data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="195" data-tchmi-left-unit="px" data-tchmi-top="575" data-tchmi-top-unit="px" data-tchmi-width="41" data-tchmi-width-unit="px" data-tchmi-text="START" data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_x_LOBBY_SS::bPresVal%/s%%/f%" data-tchmi-zindex="2" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+  </div>
+  <div id="TcHmiTextblock_2454" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="23"
+    data-tchmi-height-unit="px" data-tchmi-left="770" data-tchmi-left-unit="px" data-tchmi-top="157"
+    data-tchmi-top-unit="px" data-tchmi-width="37" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::MV_AHU_LOBBY::fPresVal%/s%.toFixed(1)%/f%"
+    data-tchmi-zindex="8">
+  </div>
+  <div id="TcHmiTextblock_2455" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="24"
+    data-tchmi-height-unit="px" data-tchmi-left="810" data-tchmi-left-unit="px" data-tchmi-text="%" data-tchmi-top="157"
+    data-tchmi-top-unit="px" data-tchmi-width="25" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="7">
+  </div>
+  <div id="TcHmiTextblock_2456" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="23"
+    data-tchmi-height-unit="px" data-tchmi-left="1172" data-tchmi-left-unit="px" data-tchmi-top="308"
+    data-tchmi-top-unit="px" data-tchmi-width="37" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-text="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::SUPP_TEMP_AHU_LOBBY::fPresVal%/s%.toFixed(1)%/f%"
+    data-tchmi-zindex="8">
+  </div>
+  <div id="TcHmiTextblock_2457" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="24"
+    data-tchmi-height-unit="px" data-tchmi-left="1212" data-tchmi-left-unit="px" data-tchmi-text="℃"
+    data-tchmi-top="308" data-tchmi-top-unit="px" data-tchmi-width="25" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-size="16" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="7">
+  </div>
+  <div id="TcHmiRectangle_1151" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-top="535"
+    data-tchmi-top-unit="px" data-tchmi-width="190" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+  </div>
+  <div id="TcHmiTextblock_2458" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-text="AHU-3"
+    data-tchmi-top="535" data-tchmi-top-unit="px" data-tchmi-width="190" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16"
+    data-tchmi-zindex="1">
+  </div>
+  <div id="TcHmiRectangle_1152" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-top="567"
+    data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+  </div>
+  <div id="TcHmiRectangle_1153" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="187" data-tchmi-left-unit="px" data-tchmi-top="567"
+    data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+  </div>
+  <div id="TcHmiTextblock_2459" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-text="AHU-3 ON/OFF"
+    data-tchmi-top="567" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="14"
+    data-tchmi-zindex="1">
+  </div>
+  <div id="TcHmiRectangle_1154" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="187" data-tchmi-left-unit="px" data-tchmi-top="599"
+    data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+  </div>
+  <div id="TcHmiRectangle_1155" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="188" data-tchmi-left-unit="px" data-tchmi-top="631"
+    data-tchmi-top-unit="px" data-tchmi-width="99" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+  </div>
+  <div id="TcHmiRectangle_1156" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-top="599"
+    data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+  </div>
+  <div id="TcHmiRectangle_1157" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-top="631"
+    data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+  </div>
+  <div id="TcHmiTextblock_2460" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-text="AHU-3 STATUS"
+    data-tchmi-top="599" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="14"
+    data-tchmi-zindex="1">
+  </div>
+  <div id="TcHmiTextblock_2461" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32"
+    data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-text="AHU-3 TRIP"
+    data-tchmi-top="631" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px"
+    data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center"
+    data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="14"
+    data-tchmi-zindex="1">
+  </div>
+  <div id="Button_258" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="17"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="195"
+    data-tchmi-left-unit="px" data-tchmi-top="575" data-tchmi-top-unit="px" data-tchmi-width="41"
+    data-tchmi-width-unit="px" data-tchmi-text="START"
+    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_x_LOBBY_SS::bPresVal%/s%%/f%"
+    data-tchmi-zindex="2" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-background-color="%tr%StatusOn%/tr%" data-tchmi-text-color="%tr%text_black%/tr%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
     "event": "Button_258.onButtonPressed",
@@ -282,8 +927,13 @@
 ]
 </script>
   </div>
-<div id="Button_259" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="17" data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="240" data-tchmi-left-unit="px" data-tchmi-top="575" data-tchmi-top-unit="px" data-tchmi-width="41" data-tchmi-width-unit="px" data-tchmi-text="STOP" data-tchmi-is-enabled="%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_x_LOBBY_SS::bPresVal%/s%" data-tchmi-zindex="2">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+  <div id="Button_259" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Button" data-tchmi-height="17"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="240"
+    data-tchmi-left-unit="px" data-tchmi-top="575" data-tchmi-top-unit="px" data-tchmi-width="41"
+    data-tchmi-width-unit="px" data-tchmi-text="STOP"
+    data-tchmi-is-enabled="%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_x_LOBBY_SS::bPresVal%/s%" data-tchmi-zindex="2"
+    data-tchmi-background-color="%tr%StatusError%/tr%" data-tchmi-text-color="%tr%text_black%/tr%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
     "event": "Button_259.onButtonPressed",
@@ -315,8 +965,12 @@
 ]
 </script>
   </div>
-<div id="TcHmiTextblock_2462" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="21" data-tchmi-height-unit="px" data-tchmi-left="209" data-tchmi-left-unit="px" data-tchmi-top="605" data-tchmi-top-unit="px" data-tchmi-width="51" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="2">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+  <div id="TcHmiTextblock_2462" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="21"
+    data-tchmi-height-unit="px" data-tchmi-left="209" data-tchmi-left-unit="px" data-tchmi-top="605"
+    data-tchmi-top-unit="px" data-tchmi-width="51" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="2">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
     "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_x_LOBBY_ST::bPresVal%/s%",
@@ -401,8 +1055,12 @@
 ]
 </script>
   </div>
-<div id="TcHmiTextblock_2463" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="21" data-tchmi-height-unit="px" data-tchmi-left="207" data-tchmi-left-unit="px" data-tchmi-top="637" data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="2">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+  <div id="TcHmiTextblock_2463" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="21"
+    data-tchmi-height-unit="px" data-tchmi-left="207" data-tchmi-left-unit="px" data-tchmi-top="637"
+    data-tchmi-top-unit="px" data-tchmi-width="59" data-tchmi-width-unit="px" data-tchmi-word-wrap="true"
+    data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center"
+    data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="16" data-tchmi-zindex="2">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
     "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_x_LOBBY_TR::bPresVal%/s%",
@@ -487,10 +1145,17 @@
 ]
 </script>
   </div>
-<div id="TcHmi_Controls_Beckhoff_TcHmiImage_10" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="385" data-tchmi-height-unit="px" data-tchmi-left="141" data-tchmi-left-unit="px" data-tchmi-src="Imports/Images/ahu lobby-0.png" data-tchmi-top="146" data-tchmi-top-unit="px" data-tchmi-width="1229" data-tchmi-width-unit="px" data-tchmi-zindex="0" data-tchmi-creator-locked="True" data-tchmi-creator-visibility="Visible">
-</div>
-<div id="Icon_137" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Icon" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="820" data-tchmi-left-unit="px" data-tchmi-top="402" data-tchmi-top-unit="px" data-tchmi-width="66" data-tchmi-width-unit="px" data-tchmi-icon="Images/Asset/fan.svg" data-tchmi-icon-width="100" data-tchmi-icon-height="100" data-tchmi-zindex="1">
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+  <div id="TcHmi_Controls_Beckhoff_TcHmiImage_10" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage"
+    data-tchmi-height="385" data-tchmi-height-unit="px" data-tchmi-left="141" data-tchmi-left-unit="px"
+    data-tchmi-src="Imports/Images/ahu lobby-0.png" data-tchmi-top="146" data-tchmi-top-unit="px"
+    data-tchmi-width="1229" data-tchmi-width-unit="px" data-tchmi-zindex="0" data-tchmi-creator-locked="True">
+  </div>
+  <div id="Icon_137" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Icon" data-tchmi-height="70"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="820"
+    data-tchmi-left-unit="px" data-tchmi-top="402" data-tchmi-top-unit="px" data-tchmi-width="66"
+    data-tchmi-width-unit="px" data-tchmi-icon="Images/Asset/fan.svg" data-tchmi-icon-width="100"
+    data-tchmi-icon-height="100" data-tchmi-zindex="1">
+    <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
   "right": 0,
@@ -503,7 +1168,7 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+    <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 50.0,
   "topRight": 50.0,
@@ -516,7 +1181,7 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
     "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_x_LOBBY_ST::bPresVal%/s%",
@@ -578,9 +1243,13 @@
   }
 ]
 </script>
-</div>
-<div id="Icon_138" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Icon" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="748" data-tchmi-left-unit="px" data-tchmi-top="453" data-tchmi-top-unit="px" data-tchmi-width="29" data-tchmi-width-unit="px" data-tchmi-icon="Images/Asset/fan.svg" data-tchmi-icon-width="100" data-tchmi-icon-height="100" data-tchmi-zindex="1">
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+  </div>
+  <div id="Icon_138" data-tchmi-type="TcHmi.BuildingAutomation.Controls.Common.Icon" data-tchmi-height="33"
+    data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="748"
+    data-tchmi-left-unit="px" data-tchmi-top="453" data-tchmi-top-unit="px" data-tchmi-width="29"
+    data-tchmi-width-unit="px" data-tchmi-icon="Images/Asset/fan.svg" data-tchmi-icon-width="100"
+    data-tchmi-icon-height="100" data-tchmi-zindex="1">
+    <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
   "right": 0,
@@ -593,7 +1262,7 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+    <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 30.0,
   "topRight": 30.0,
@@ -606,7 +1275,7 @@
 }
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
     "event": "%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::AHU_x_LOBBY_ST::bPresVal%/s%",
@@ -662,6 +1331,146 @@
             ]
           }
         ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+  </div>
+<div id="TcHmiRectangle_1216" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="242" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="14" data-tchmi-top-unit="px" data-tchmi-width="286" data-tchmi-width-unit="px" data-tchmi-zindex="0" data-tchmi-background-image="Themes/Base/Images/Background.png">
+</div>
+<div id="TcHmiTextblock_3762" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="67" data-tchmi-left-unit="px" data-tchmi-text="SET POINT" data-tchmi-top="25" data-tchmi-top-unit="px" data-tchmi-width="181" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="24" data-tchmi-zindex="9">
+</div>
+<div id="TcHmiTextblock_3763" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="30" data-tchmi-left-unit="px" data-tchmi-text="SP.TEDR" data-tchmi-top="71" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="20" data-tchmi-zindex="9">
+</div>
+<div id="TcHmiNumericInput_20" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="71" data-tchmi-top-unit="px" data-tchmi-value="%i%AHU_LOBBY_SP_TEDR_SP%/i%" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zindex="1" data-tchmi-value-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiNumericInput_20.onUserInteractionFinished",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%i%AHU_LOBBY_SP_TEDR_SP%/i%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%TcHmiNumericInput_20::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_3764" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="30" data-tchmi-left-unit="px" data-tchmi-text="TEDR" data-tchmi-top="112" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="20" data-tchmi-zindex="9">
+</div>
+<div id="TcHmiNumericInput_21" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="112" data-tchmi-top-unit="px" data-tchmi-value="%i%AHU_LOBBY_TEDR_SP%/i%" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zindex="1" data-tchmi-value-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiNumericInput_21.onUserInteractionFinished",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%i%AHU_LOBBY_TEDR_SP%/i%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%TcHmiNumericInput_21::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_3765" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="17" data-tchmi-left-unit="px" data-tchmi-text="MV AHU-1" data-tchmi-top="153" data-tchmi-top-unit="px" data-tchmi-width="93" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="20" data-tchmi-zindex="9">
+</div>
+<div id="TcHmiNumericInput_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="153" data-tchmi-top-unit="px" data-tchmi-value="%i%AHU_LOBBY_MV_SP%/i%" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zindex="1" data-tchmi-value-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiNumericInput_22.onUserInteractionFinished",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%i%AHU_LOBBY_MV_SP%/i%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%TcHmiNumericInput_22::Value%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_3766" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="30" data-tchmi-left-unit="px" data-tchmi-text="TEDS" data-tchmi-top="192" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Bold" data-tchmi-text-font-size="20" data-tchmi-zindex="9">
+</div>
+<div id="TcHmiNumericInput_23" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="194" data-tchmi-top-unit="px" data-tchmi-value="%i%AHU_LOBBY_TEDS_SP%/i%" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zindex="1" data-tchmi-value-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiNumericInput_23.onUserInteractionFinished",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%i%AHU_LOBBY_TEDS_SP%/i%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%TcHmiNumericInput_23::Value%/ctrl%"
+        },
         "asyncWait": true
       }
     ]

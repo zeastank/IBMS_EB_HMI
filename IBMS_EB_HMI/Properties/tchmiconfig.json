@@ -52,7 +52,11 @@
       "type": "Stylesheet"
     }
   ],
-  "userControls": [],
+  "userControls": [
+    {
+      "url": "UserControl/AhuControl.usercontrol"
+    }
+  ],
   "content": [
     {
       "url": "Pages/AirConditioner.content",
@@ -8820,11 +8824,63 @@
         "persist": false,
         "readonly": false
       },
-      "User_Group": {
-        "value": [
-          "Frontdesk"
-        ],
-        "type": "tchmi:server#/definitions/userGroups",
+      "AHU_2_SP_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_2_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_2_MV_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_2_TEDS_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_1_SP_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_1_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_1_MV_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_1_TEDS_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_LOBBY_SP_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_LOBBY_TEDR_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
         "persist": false,
         "readonly": false
       }
@@ -9160,6 +9216,16 @@
         "values": {
           "Base": "Images/Asset/icon/sump_pump_icon_black.png",
           "Base-Dark": "Images/Asset/icon/sump_pump_icon_black.png"
+        }
+      },
+      "text_black": {
+        "type": "tchmi:framework#/definitions/Color",
+        "description": "",
+        "values": {
+          "Base": {
+            "color": "rgba(0, 0, 0, 1)"
+          },
+          "Base-Dark": null
         }
       }
     }

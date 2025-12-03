@@ -50,7 +50,8 @@
     data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="310"
     data-tchmi-left-unit="px" data-tchmi-top="107" data-tchmi-top-unit="px" data-tchmi-width="73"
     data-tchmi-width-unit="px" data-tchmi-text="START"
-    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_MZ_1_S_S::bPresVal%/s%%/f%">
+    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_MZ_1_S_S::bPresVal%/s%%/f%"
+    data-tchmi-background-color="%tr%StatusOn%/tr%" data-tchmi-text-color="%tr%text_black%/tr%">
     <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
         [
           {
@@ -87,7 +88,8 @@
     data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="392"
     data-tchmi-left-unit="px" data-tchmi-top="107" data-tchmi-top-unit="px" data-tchmi-width="65"
     data-tchmi-width-unit="px" data-tchmi-text="STOP"
-    data-tchmi-is-enabled="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_MZ_1_S_S::bPresVal%/s%%/f%">
+    data-tchmi-is-enabled="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Exhaust_Fan_MZ_1_S_S::bPresVal%/s%%/f%"
+    data-tchmi-background-color="%tr%StatusError%/tr%" data-tchmi-text-color="%tr%text_black%/tr%">
     <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
             [
               {
@@ -124,7 +126,8 @@
     data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="1157"
     data-tchmi-left-unit="px" data-tchmi-top="133" data-tchmi-top-unit="px" data-tchmi-width="73"
     data-tchmi-width-unit="px" data-tchmi-text="START"
-    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_MZ_1_S_S::bPresVal%/s%%/f%">
+    data-tchmi-is-enabled="%f%!%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_MZ_1_S_S::bPresVal%/s%%/f%"
+    data-tchmi-background-color="%tr%StatusOn%/tr%" data-tchmi-text-color="%tr%text_black%/tr%">
     <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
         [
           {
@@ -161,7 +164,8 @@
     data-tchmi-height-unit="px" data-tchmi-icon-height-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-left="1241"
     data-tchmi-left-unit="px" data-tchmi-top="133" data-tchmi-top-unit="px" data-tchmi-width="65"
     data-tchmi-width-unit="px" data-tchmi-text="STOP"
-    data-tchmi-is-enabled="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_MZ_1_S_S::bPresVal%/s%%/f%">
+    data-tchmi-is-enabled="%f%%s%PLC1.MAIN.fbSCSII_2_GRAHA_ENERGY::Intake_Fan_MZ_1_S_S::bPresVal%/s%%/f%"
+    data-tchmi-background-color="%tr%StatusError%/tr%" data-tchmi-text-color="%tr%text_black%/tr%">
     <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
         [
           {

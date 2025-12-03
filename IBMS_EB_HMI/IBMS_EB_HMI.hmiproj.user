@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <TcHmiEditor_SelectBindingWindowDimension>259;230;958;672</TcHmiEditor_SelectBindingWindowDimension>
+    <TcHmiEditor_SelectBindingWindowDimension>525;212;958;672</TcHmiEditor_SelectBindingWindowDimension>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>[
   293.0,
   50.0,
@@ -66,15 +66,17 @@
   300.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlTypeAttributesTree>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_ThemedResourceTree>[
-  254.0,
-  300.0
+  200.0,
+  300.0,
+  100.0,
+  100.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ThemedResourceTree>
     <TcHmiEditor_SplitAreaStates>{
   "EditorSettings": [
     {
       "Path": "Desktop.view",
-      "DesignAreaSplitSize": "Splitted",
-      "CodeAreaSplitSize": "Splitted",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
@@ -307,12 +309,12 @@
     },
     {
       "Path": "Pages\\Dashboard.content",
-      "DesignAreaSplitSize": "Splitted",
-      "CodeAreaSplitSize": "Splitted",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
-      "SplitPercentage": 0.99361702127659579
+      "SplitPercentage": 0.5
     },
     {
       "Path": "Pages\\Azbil\\Floor30.content",
@@ -459,7 +461,7 @@
       "SplitPercentage": 0.5
     },
     {
-      "Path": "Pages\\AirConditioner.content",
+      "Path": "Pages\\Azbil\\AHULobby.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
@@ -468,7 +470,16 @@
       "SplitPercentage": 0.5
     },
     {
-      "Path": "Pages\\AirConditioner\\Floor32\\Floor32_A1.content",
+      "Path": "Pages\\Azbil\\AHU1.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "Pages\\Azbil\\FirePump.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
@@ -486,7 +497,7 @@
       "SplitPercentage": 0.5
     },
     {
-      "Path": "Pages\\LogReader.content",
+      "Path": "Pages\\Azbil\\AHUNav.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
@@ -495,7 +506,7 @@
       "SplitPercentage": 0.5
     },
     {
-      "Path": "Pages\\AirConditioner\\AC_Scheduler.content",
+      "Path": "Pages\\AirConditioner\\Floor10\\Floor10_A1.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
@@ -517,47 +528,31 @@
     <RecentColors>[
   {
     "counter": 0,
-    "color": "#FF6698B4"
-  },
-  {
-    "counter": 0,
-    "color": "#FF0B70A6"
-  },
-  {
-    "counter": 0,
-    "color": "#FF15628B"
-  },
-  {
-    "counter": 0,
-    "color": "#FF246D93"
-  },
-  {
-    "counter": 0,
-    "color": "#FF396176"
-  },
-  {
-    "counter": 0,
-    "color": "#FF3F6E88"
-  },
-  {
-    "counter": 0,
-    "color": "#FFADC9D9"
-  },
-  {
-    "counter": 0,
-    "color": "#FFC0D0D9"
-  },
-  {
-    "counter": 0,
-    "color": "#FFDBECF6"
-  },
-  {
-    "counter": 0,
-    "color": "#FFDBF6E9"
-  },
-  {
-    "counter": 0,
     "color": "#FF000000"
+  },
+  {
+    "counter": 0,
+    "color": "#FF251F1F"
+  },
+  {
+    "counter": 0,
+    "color": "#FFEAE216"
+  },
+  {
+    "counter": 0,
+    "color": "#FFEFE60C"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF4E212"
+  },
+  {
+    "counter": 0,
+    "color": "#FFB4A827"
+  },
+  {
+    "counter": 0,
+    "color": "#FFDBCB13"
   },
   {
     "counter": 0,
@@ -565,37 +560,52 @@
   },
   {
     "counter": 0,
-    "color": "#FF26458E"
+    "color": "#FFE5E519"
   },
   {
     "counter": 0,
-    "color": "#FF99ACD9"
+    "color": "#FFD4D40B"
   },
   {
     "counter": 0,
-    "color": "#FFC84444"
+    "color": "#FFECEC24"
   },
   {
     "counter": 0,
-    "color": "#FFDB6666"
+    "color": "#FFF6F612"
   },
   {
     "counter": 0,
-    "color": "#FFDBBABA"
+    "color": "#C80051FF"
   },
   {
     "counter": 0,
-    "color": "#FFFFF3F3"
+    "color": "#FFF11515"
   },
   {
     "counter": 0,
-    "color": "#FFD72727"
+    "color": "#FFEA1818"
   },
   {
     "counter": 0,
-    "color": "#FFAF6C6C"
+    "color": "#FFF91E1E"
+  },
+  {
+    "counter": 0,
+    "color": "#FFE32D2D"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF11C1C"
+  },
+  {
+    "counter": 0,
+    "color": "#FFF31A1A"
+  },
+  {
+    "counter": 0,
+    "color": "#FFEF2323"
   }
 ]</RecentColors>
-    <TcHmiEditor_PermissionsWindowDimension>208;208;1000;700</TcHmiEditor_PermissionsWindowDimension>
   </PropertyGroup>
 </Project>
