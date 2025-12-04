@@ -7503,6 +7503,20 @@
       "preloadBindings": false
     },
     {
+      "url": "Pages/Azbil/AHUNav.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Azbil/ExhaustNav.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Pages/Azbil/AHU1.content",
       "preload": false,
       "keepAlive": false,
@@ -7923,14 +7937,14 @@
       "preloadBindings": false
     },
     {
-      "url": "Pages/Settings.content",
+      "url": "Pages/LogReader.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
       "preloadBindings": false
     },
     {
-      "url": "Pages/LogReader.content",
+      "url": "Pages/Settings.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,

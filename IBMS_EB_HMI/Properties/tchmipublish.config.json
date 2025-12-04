@@ -22,7 +22,7 @@
         "name": "TcHmiSqliteLogger"
       },
       {
-        "publishServerExtension": true,
+        "publishServerExtension": false,
         "name": "TcHmiSrv"
       },
       {
@@ -39,12 +39,12 @@
     "destinationUrl": "",
     "passiveMode": true,
     "savePassword": true,
-    "deleteAllFilesBeforePublish": false,
-    "deleteExtensionDataBeforePublish": false,
+    "deleteAllFilesBeforePublish": true,
+    "deleteExtensionDataBeforePublish": true,
     "alwaysPublishLocalServerConfiguration": true,
     "temporaryPublishWithoutServerConfiguration": false,
     "abortOnErrors": true,
-    "createPublishLog": false,
+    "createPublishLog": true,
     "userName": "",
     "encryptedPassword": "",
     "encryptedTcHmiServerPassword": "jgJfczI+o7wwMD/A5Z0T3A==",
@@ -58,7 +58,7 @@
     "tcHmiUseTLS": true,
     "useClientCertificate": false,
     "launchBrowserAfterPublish": false,
-    "createVirtualDirectoriesOnTargetSystem": false,
+    "createVirtualDirectoriesOnTargetSystem": true,
     "tcHmiServerUserName": "__SystemAdministrator",
     "tcHmiDestinationUrl": "https://10.88.1.5:1020/",
     "publishConfiguration": "remote",

@@ -51,7 +51,13 @@
     "minWidth": 288.0,
     "minWidthUnit": "px",
     "classList": [],
-    "accessRights": [],
+    "accessRights": [
+      {
+        "accessright": "operate",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
+    ],
     "messageFormat": [
       {
         "name": "timeRaised"
@@ -187,7 +193,14 @@
     "content": "Pages/Dashboard.content",
     "icon_a": "%tr%TR_Icon_Dashboard_active%/tr%",
     "icon_n": "%tr%TR_Icon_Dashboard_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Dashboard_pressed%/tr%"
+    "icon_p": "%tr%TR_Icon_Dashboard_pressed%/tr%",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Allow"
+      }
+    ]
   },
   {
     "name": "%l%L_AirConditioner%/l%",
@@ -4534,6 +4547,13 @@
           }
         ]
       }
+    ],
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
     ]
   },
   {
@@ -4735,6 +4755,13 @@
         "name": "Mech-3",
         "content": "Pages/Azbil/FloorPH3.content"
       }
+    ],
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
     ]
   },
   {
@@ -4756,6 +4783,13 @@
         "name": "AHU Lobby",
         "content": "Pages/Azbil/AHULobby.content"
       }
+    ],
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
     ]
   },
   {
@@ -4763,56 +4797,112 @@
     "content": "Pages/Azbil/Chiller.content",
     "icon_a": "%tr%TR_Icon_Chiller_active%/tr%",
     "icon_n": "%tr%TR_Icon_Chiller_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Chiller_pressed%/tr%"
+    "icon_p": "%tr%TR_Icon_Chiller_pressed%/tr%",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
+    ]
   },
   {
     "name": "Clean Water",
     "content": "Pages/Azbil/CleanWater.content",
     "icon_a": "%tr%TR_Icon_CleanWater_active%/tr%",
     "icon_n": "%tr%TR_Icon_CleanWater_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_CleanWater_pressed%/tr%"
+    "icon_p": "%tr%TR_Icon_CleanWater_pressed%/tr%",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
+    ]
   },
   {
     "name": "Solar Tank",
     "content": "Pages/Azbil/SolarTank.content",
     "icon_a": "%tr%TR_Icon_Solar_active%/tr%",
     "icon_n": "%tr%TR_Icon_Solar_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Solar_pressed%/tr%"
+    "icon_p": "%tr%TR_Icon_Solar_pressed%/tr%",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
+    ]
   },
   {
     "name": "DSP",
     "content": "Pages/Azbil/DSP.content",
     "icon_a": "%tr%TR_Icon_pump_active%/tr%",
     "icon_n": "%tr%TR_Icon_pump_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_pump_pressed%/tr%"
+    "icon_p": "%tr%TR_Icon_pump_pressed%/tr%",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
+    ]
   },
   {
     "name": "SSP",
     "content": "Pages/Azbil/SSP.content",
     "icon_a": "%tr%TR_Icon_pump_active%/tr%",
     "icon_n": "%tr%TR_Icon_pump_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_pump_pressed%/tr%"
+    "icon_p": "%tr%TR_Icon_pump_pressed%/tr%",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
+    ]
   },
   {
     "name": "Fire Pump",
     "content": "Pages/Azbil/FirePump.content",
     "icon_a": "%tr%TR_Icon_Fire_active%/tr%",
     "icon_n": "%tr%TR_Icon_Fire_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Fire_pressed%/tr%"
+    "icon_p": "%tr%TR_Icon_Fire_pressed%/tr%",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
+    ]
   },
   {
     "name": "%l%L_Events%/l%",
     "content": "Pages/Events.content",
     "icon_a": "%tr%TR_Icon_Events_active%/tr%",
     "icon_n": "%tr%TR_Icon_Events_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Events_pressed%/tr%"
+    "icon_p": "%tr%TR_Icon_Events_pressed%/tr%",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
+    ]
   },
   {
     "name": "%l%L_Settings%/l%",
     "content": "Pages/Settings.content",
     "icon_a": "%tr%TR_Icon_Settings_active%/tr%",
     "icon_n": "%tr%TR_Icon_Settings_normal%/tr%",
-    "icon_p": "%tr%TR_Icon_Settings_pressed%/tr%"
+    "icon_p": "%tr%TR_Icon_Settings_pressed%/tr%",
+    "accessRights": [
+      {
+        "accessright": "observe",
+        "group": "Monitor",
+        "permission": "Deny"
+      }
+    ]
   }
 ]
 </script>
