@@ -1,5 +1,5 @@
 {
-  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.46/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "$schema": "./../../../../../Users/irsyadime/Documents/TcXaeShell/kwhMeter/Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.46/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
   "basePath": "./framework",
   "scaleMode": "None",
   "startupView": "Desktop.view",
@@ -8881,7 +8881,91 @@
       "AHU_LOBBY_TEDR_SP": {
         "value": 0.0,
         "type": "tchmi:general#/definitions/FLOAT",
-        "persist": false,
+        "persist": true,
+        "readonly": false
+      },
+      "CH_PT_CHWS_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_WATER_FLOW_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_TEW_1_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_TEW_2_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_TEW_3_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_TEW_4_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_TEW_5_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_TEW_6_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_TEW_7_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_TEW_8_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_TEW_11_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "CH_TEW_12_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_LOBBY_MV_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
+        "readonly": false
+      },
+      "AHU_LOBBY_TEDS_SP": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/FLOAT",
+        "persist": true,
         "readonly": false
       }
     },
