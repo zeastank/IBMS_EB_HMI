@@ -1,5 +1,5 @@
 {
-  "$schema": "./../../../../../Users/irsyadime/Documents/TcXaeShell/kwhMeter/Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.46/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.46/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
   "basePath": "./framework",
   "scaleMode": "None",
   "startupView": "Desktop.view",
@@ -8974,48 +8974,48 @@
         "type": "tchmi:framework#/definitions/Path",
         "description": "Normal Icon of page: Events",
         "values": {
-          "Base": "Themes/Base/Images/Events/message_normal.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Events/message_normal.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Events_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "Pressed Icon of page: Events",
         "values": {
-          "Base": "Themes/Base/Images/Events/message_pressed.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Events/message_pressed.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Events_active": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "Active Icon of page: Events",
         "values": {
-          "Base": "Themes/Base/Images/Events/message_active.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Events/message_active.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Settings_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "Normal Icon of page: Settings",
         "values": {
-          "Base": "Themes/Base/Images/Settings/settings_normal.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Settings/settings_normal.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Settings_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "Pressed Icon of page: Settings",
         "values": {
-          "Base": "Themes/Base/Images/Settings/settings_pressed.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Settings/settings_pressed.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Settings_active": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "Active Icon of page: Settings",
         "values": {
-          "Base": "Themes/Base/Images/Settings/settings_active.svg",
-          "Base-Dark": "Themes/Base-Dark/Images/Settings/settings_active.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "StatusOff": {
@@ -9090,216 +9090,216 @@
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Imports/Images/ventilation-active.svg",
-          "Base-Dark": "Imports/Images/ventilation-active.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_EF_IF_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Imports/Images/ventilation-normal.svg",
-          "Base-Dark": "Imports/Images/ventilation-normal.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_EF_IF_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Imports/Images/ventilation-pressed.svg",
-          "Base-Dark": "Imports/Images/ventilation-pressed.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Dashboard_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Imports/Images/hmi-main-normal.svg",
-          "Base-Dark": "Imports/Images/hmi-main-normal.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Dashboard_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Imports/Images/hmi-main-pressed.svg",
-          "Base-Dark": "Imports/Images/hmi-main-pressed.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Dashboard_active": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Imports/Images/hmi-main-active.svg",
-          "Base-Dark": "Imports/Images/hmi-main-active.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Fire_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Imports/Images/icons_fire-protection_normal.svg",
-          "Base-Dark": "Imports/Images/icons_fire-protection_normal.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Fire_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Imports/Images/icons_fire-protection_pressed.svg",
-          "Base-Dark": "Imports/Images/icons_fire-protection_pressed.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Fire_active": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Imports/Images/icons_fire-protection_active.svg",
-          "Base-Dark": "Imports/Images/icons_fire-protection_active.svg"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_CleanWater_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/clean_water_icon2_blue.png",
-          "Base-Dark": "Images/Asset/icon/clean_water_icon2_blue.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_CleanWater_active": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/clean_water_icon.png",
-          "Base-Dark": "Images/Asset/icon/clean_water_icon.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_CleanWater_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/clean_water_icon2_black.png",
-          "Base-Dark": "Images/Asset/icon/clean_water_icon2_black.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Chiller_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/chiller-icon2_blue.png",
-          "Base-Dark": "Images/Asset/icon/chiller-icon2_blue.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Chiller_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/chiller-icon.png",
-          "Base-Dark": "Images/Asset/icon/chiller-icon.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Chiller_active": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/chiller-icon2_white.png",
-          "Base-Dark": "Images/Asset/icon/chiller-icon2_white.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_AHU_active": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/ahu-icon2_white.png",
-          "Base-Dark": "Images/Asset/icon/ahu-icon2_white.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_AHU_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/ahu-icon2_blue.png",
-          "Base-Dark": "Images/Asset/icon/ahu-icon2_blue.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_AHU_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/ahu-icon2_black.png",
-          "Base-Dark": "Images/Asset/icon/ahu-icon2_black.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_AirConditioner_active": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/AC_icon2_white.png",
-          "Base-Dark": "Images/Asset/icon/AC_icon2_white.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_AirConditioner_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/AC_icon2_blue.png",
-          "Base-Dark": "Images/Asset/icon/AC_icon2_blue.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_AirConditioner_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/AC_icon2_black.png",
-          "Base-Dark": "Images/Asset/icon/AC_icon2_black.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Solar_active": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/solar_tank_icon.png",
-          "Base-Dark": "Images/Asset/icon/solar_tank_icon.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Solar_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/solar_tank_icon_blue.png",
-          "Base-Dark": "Images/Asset/icon/solar_tank_icon_blue.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_Solar_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/solar_tank_icon_black.png",
-          "Base-Dark": "Images/Asset/icon/solar_tank_icon_black.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_pump_active": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/sump_pump_icon_white.png",
-          "Base-Dark": "Images/Asset/icon/sump_pump_icon_white.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_pump_normal": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/sump_pump_icon_blue.png",
-          "Base-Dark": "Images/Asset/icon/sump_pump_icon_blue.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "TR_Icon_pump_pressed": {
         "type": "tchmi:framework#/definitions/Path",
         "description": "",
         "values": {
-          "Base": "Images/Asset/icon/sump_pump_icon_black.png",
-          "Base-Dark": "Images/Asset/icon/sump_pump_icon_black.png"
+          "Base": null,
+          "Base-Dark": null
         }
       },
       "text_black": {
